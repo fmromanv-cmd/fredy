@@ -1,0 +1,13 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vs/
+.vscode/
+*.suo
+*.user
+
+# Build outputs
+bin/
+obj/
