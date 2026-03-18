@@ -1,0 +1,4061 @@
+regexes:
+  regex_arriendo:
+    categoria_codigo: D10100
+    categoria_nombre: Vivienda y Hogar
+    subcategoria_codigo: D10101
+    subcategoria_nombre: Arriendo
+    regex: |
+      (?ix)
+      (?!.*\b(
+        venta|compra|mueble|electro|hipoteca|cr[eé]dito|banco|
+        ferreter[ií]a|home@?center|easy|falabella|
+        constructora|seguros?|fiduciaria
+      )\b)
+      \b(
+        arriendo|arrendamiento(?:s)?|
+        canon@de@arrendamiento|
+        alquiler|renta@mensual|lease|
+        pago@arriendo|canon@mensual|
+        inmobiliaria[s]?|bienes@ra[ií]ces|
+        corretaje@inmobiliario|propiedades|
+        contrato@de@arriendo|
+        dep[oó]sito@de@arriendo|
+        fianza|garantia@de@arriendo
+      )\b
+
+  regex_hipoteca:   
+    categoria_codigo: D10100
+    categoria_nombre: Vivienda y Hogar
+    subcategoria_codigo: D10102
+    subcategoria_nombre: Hipoteca
+    regex: |
+      (?ix)
+      (?!.*\b(
+        veh[ií]culo|carro|moto|educaci[oó]n|libre@inversi[oó]n|
+        seguros?|inmobiliaria@venta
+      )\b)
+      \b(
+        hipoteca|cr[eé]dito@hipotecario|
+        prestamo@hipotecario|
+        cuota@hipotecaria|
+        cuota@cr[eé]dito@hipotecario|
+        abono@cr[eé]dito@hipotecario|
+        abono@hipoteca|
+        cuota@mensual@hipoteca|
+        pago@hipoteca@vivienda|
+        financiaci[oó]n@vivienda|
+        cr[eé]dito@vivienda@VIS|
+        subsidio@habitacional|
+        leasing@habitacional
+      )\b
+
+  regex_servicios_publicos: 
+    categoria_codigo: D10100
+    categoria_nombre: Vivienda y Hogar
+    subcategoria_codigo: ""
+    subcategoria_nombre: Servicios públicos
+    regex: |
+      (?ix)
+      (?!.*\b(
+        restaurante|market|supermercado|tienda|home@?center|easy|ferreter[ií]a|
+        gasolina|combustible|eds|aseo@personal|productos@de@aseo|gnv|vehicular
+      )\b)
+      \b(
+        agua|acueducto|acuaducto|agua@potable|
+        empresa@de@acueducto|eaab|alcantarillado|
+        energ[ií]a|energia@el[eé]ctrica|luz|
+        electrificadora|electrificadora@de@santander|
+        enel|enel-?codensa|codensa|epm|e\.p\.m\.|chec|celsia|
+        emcali|essa|afinia|aire|air-e|emsa|essmar|
+        electrihuila|electrocosta|cens|enerpereira|
+        centrales@electricas@del@cauca|ceo|
+        gas|gas@natural|gas@domiciliario|
+        surtigas|vanti|alcanos@de@colombia|gascaribe|
+        efigas|gases@de@occidente|
+        aseo|recolecci[oó]n@de@basuras?|
+        interaseo|lime(?:@s\.a\.)?|promoambiental|
+        ciudad@limpia|urbaser|
+        triple@play
+      )\b
+
+  regex_internet_telefonia: 
+    categoria_codigo: D10100
+    categoria_nombre: Vivienda y Hogar
+    subcategoria_codigo: ""
+    subcategoria_nombre: Internet y telefonía
+    regex: |
+      (?ix)
+      (?!.*\b(
+        celular|equipo|iphone|samsung|venta|tienda|accesorios?
+      )\b)
+      \b(
+        banda@ancha|fibra@[oó]ptica|wifi|wi-?fi|
+        conexi[oó]n@de@datos|internet|
+        internet@(?:fijo|inalámbrico|hogar|residencial|empresarial)|
+        servicio@de@internet|proveedor(?:es)?@de@internet|
+        conectividad@(?:hogar|rural|empresarial)?|
+        plan@de@datos|plan@pospago|plan@prepago|
+        paquete[s]?|bolsa|tiempo|
+        compra@de@(?:minutos|datos|megas|gigas)|
+        minutos@ilimitados|datos@ilimitados|
+        telefon[ií]a@fija|telefon[ií]a@m[oó]vil|
+        recarga@celular|recarga[s]?@celulares|
+        recarga@(?:celular|m[oó]vil|prepago)|
+        claro|tigo|movistar|wom|etb|comcel|avantel|
+        virgin@mobile|flash@mobile|directv|hughesnet|
+        emcali|une|tigo@une|
+        compu@?r?edes?|interred|inter@?red|netline|net@?line|
+        netcol|global@?net|globalnet|supernet|compuredes|tdatos|
+        red@(?:comunicaciones|digital)|telered|celerity|
+        servicio@de@telecomunicaciones|comunicacion(?:es)?|
+        telecomunicaciones|soluciones?@de?@comunicaciones|
+        tv|(?:tv|internet)@satelital|
+        antenas?@(?:de)?@television
+      )\b
+
+  regex_mantenimiento_hogar: 
+    categoria_codigo: D10100
+    categoria_nombre: Vivienda y Hogar
+    subcategoria_codigo: ""
+    subcategoria_nombre: Mantenimiento del hogar
+    regex: |
+      (?ix)
+      (?!.*\b(
+        ferreter[ií]a|material(es)?|compra|venta|home@?center|easy|
+        constructor(a)?|almac[eé]n|distribuidora
+      )\b)
+      \b(
+        mantenimiento|reparaciones?|
+        arreglos?@locativos|
+        plomer[ií]a|fontaner[ií]a|
+        electricidad|electricista|
+        pintura|pintor|pinturas?|
+        remodelaci[oó]n|obra@civil|
+        mantenimiento@hogar|
+        reparaci[oó]n@vivienda|
+        acabados?(?:@\w+)?|
+        drywall|enchapes@y@apliques|
+        instalaci[oó]n@de@pisos|
+        instalaci[oó]n@de@baldosas|
+        reparaci[oó]n@de@techos|
+        impermeabilizaci[oó]n|
+        resane@de@paredes|
+        estuco|masilla|soldadura|
+        mejoras@locativas|
+        adecuaciones?@hogar|
+        reforma@ba[ñn]o|reforma@cocina
+      )\b
+
+  regex_seguridad_privada: 
+    categoria_codigo: D10100
+    categoria_nombre: Vivienda y Hogar
+    subcategoria_codigo: ""
+    subcategoria_nombre: Seguridad privada
+    regex: |
+      (?ix)
+      (?!.*\b(
+        camaras?|equipo|venta|instalaci[oó]n@equipo|
+        sistemas?@de@seguridad|compra@equipo
+      )\b)
+      \b(
+        vigilancia|seguridad@privada|
+        empresa@de@seguridad|
+        guardas?|escoltas?|
+        alarmas?|monitoreo@de@alarmas|
+        central@de@alarmas|
+        prosegur|securitas|adt|g4s|
+        servicio@de@vigilancia|
+        vigilancia@residencial|
+        porteria|portero|
+        control@de@acceso|
+        circuito@cerrado|
+        monitoreo@24@horas|
+        respuesta@inmediata|
+        patrullaje|rondas@de@seguridad
+      )\b
+
+  regex_administracion: 
+    categoria_codigo: D10100
+    categoria_nombre: Vivienda y Hogar
+    subcategoria_codigo: ""
+    subcategoria_nombre: Administración
+    regex: |
+      (?ix)
+      (?!.*\b(
+        arriendo|hipoteca|venta|inmobiliaria@venta|constructora
+      )\b)
+      \b(
+        administraci[oó]n|
+        cuota@de@administraci[oó]n|
+        gastos@comunes|
+        propiedad@horizont(?:al)?|
+        ph\b|condominio|
+        conjunto@residencial|
+        administradora@inmobiliaria|
+        cuota@mensual@administraci[oó]n|
+        gastos@de@administraci[oó]n|
+        expensas@comunes|
+        mantenimiento@edificio|
+        cuota@extraordinaria|
+        reservas@del@edificio|
+        fondo@de@imprevistos|
+        administrador@propiedad
+      )\b
+
+  regex_jardineria: 
+    categoria_codigo: D10100
+    categoria_nombre: Vivienda y Hogar
+    subcategoria_codigo: ""
+    subcategoria_nombre: Jardinería
+    regex: |
+      (?ix)
+      (?!.*\b(
+        vivero@venta|venta@plantas?|home@?center|easy|
+        supermercado|market|tienda
+      )\b)
+      \b(
+        jardiner[ií]a|jardineros?|
+        mantenimiento@de@jard[ií]n|
+        poda@de@[aá]rboles|paisajismo|
+        vivero|plantas?@ornamentales|
+        mantenimiento@jardines|
+        mantenimiento@zonas@verdes|
+        corte@de@c[eé]sped|
+        fumigaci[oó]n@jardines|
+        riego@autom[aá]tico|
+        siembra@de@plantas|
+        dise[ñn]o@de@jardines|
+        adecuaci[oó]n@jardines|
+        control@de@plagas@jardiner[ií]a|
+        abono@para@plantas|
+        servicio@de@jardiner[ií]a
+      )\b
+
+  regex_mudanzas: 
+    categoria_codigo: D10100
+    categoria_nombre: Vivienda y Hogar
+    subcategoria_codigo: ""
+    subcategoria_nombre: Mudanzas
+    regex: |
+      (?ix)
+      (?!.*\b(
+        viaje|pasajes?|bus|aerol[ií]nea|turismo|hotel
+      )\b)
+      \b(
+        mudanza|mudanzas|trasteo|trasteos|
+        acarreo|transporte@de@muebles|
+        traslado@de@vivienda|
+        mudanzas@nacionales?|
+        embalaje@de@muebles|
+        empaque@mudanza|
+        carga@y@descarga|
+        servicio@de@mudanza|
+        empresa@de@mudanzas|
+        traslado@domiciliario|
+        mudanza@residencial|
+        mudanza@comercial|
+        transporte@enseres|
+        guardamuebles|almacenamiento@temporal
+      )\b
+      
+  regex_limpieza: 
+    categoria_codigo: D10100
+    categoria_nombre: Vivienda y Hogar
+    subcategoria_codigo: ""
+    subcategoria_nombre: Limpieza
+    regex: |
+      (?ix)
+      (?!.*\b(
+        detergentes?|productos?@de@limpieza|supermercado|market|
+        venta@productos|home@?center|easy
+      )\b)
+      \b(
+        limpieza|aseo@dom[eé]stico|
+        servicio@de@aseo|
+        limpieza@profesional|
+        limpieza@residencial|
+        empleada@dom[eé]stica|
+        empresa@de@aseo|
+        limpieza@profunda|limpieza@general|
+        aseo@de@oficinas|aseo@comercial|
+        limpieza@de@ventanas|
+        limpieza@de@alfombras|
+        limpieza@de@tapetes|
+        lavado@de@fachadas|
+        pulido@de@pisos|
+        encerado@de@pisos|
+        desinfeci[oó]n|sanitizaci[oó]n|
+        servicio@dom[eé]stico|mucama
+      )\b
+      
+  regex_transporte_publico: 
+    categoria_codigo: D10200
+    categoria_nombre: Transporte
+    subcategoria_codigo: D10201
+    subcategoria_nombre: Transporte público
+    regex: |
+      (?ix)
+      \b(
+        transporte@p[uú]blico |
+        bus(es)?@urbanos? |
+        sistema@integrado@de@transporte |
+        transmilenio |
+        sitp |
+        metro@de@\w+ |
+        tranv[ií]a |
+        alimentador(es)? |
+        cabina@de@metro |
+        colectivo(s)?
+      )\b
+      (?!.*\b(
+        transporte@escolar|tur[ií]stico|viaje|tour
+      )\b)
+
+  regex_apps_transporte_taxi: 
+    categoria_codigo: D10200
+    categoria_nombre: Transporte
+    subcategoria_codigo: D10202
+    subcategoria_nombre: Apps transporte / taxi
+    regex: |
+      (?ix)
+      \b(
+        uber |
+        didi |
+        beat |
+        cabify |
+        in?driver |
+        taxi@(legal|amarrillo)? |
+        servicio@de@taxi |
+        plataforma@de@transporte |
+        app@de@movilidad
+      )\b
+      (?!.*\b(
+        multas?|comparendos?|licencia|soat|seguro
+      )\b)
+  regex_gasolina: 
+    categoria_codigo: D10200
+    categoria_nombre: Transporte
+    subcategoria_codigo: D10203
+    subcategoria_nombre: Gasolina
+    regex: |
+      (?ix)
+      (?!.*\b(
+          mascotas? |
+          veterinari[ao] |
+          pet(shop|store|center|house) |
+          laika |
+          puppis |
+          gas@domiciliario |
+          gas@natural@residencial |
+          cilindros?@gas |
+          mantenimiento |
+          taller |
+          mec[aá]nica |
+          lavado |
+          car@?wash |
+          seguro |
+          soat |
+          revisi[oó]n |
+          tecnic(o)?[-\s]*mec[aá]nica
+      )\b)
+      \b(
+          gasolina(@(extra|corriente|motor))? |
+          combustible |
+          di[eé]sel |
+          diesel |
+          acpm |
+          gasoil |
+          biodiesel |
+          ecodiesel |
+          etanol |
+          gnv |
+          glp |
+          gas@(vehicular|natural(?:@vehicular)?) |
+          autogas |
+          multigas |
+          tanqueo |
+          tanquear |
+          tanqueadero |
+          estaci[oó]n@(de@)?servicio(s)? |
+          gasolinera(s)? |
+          servicentro |
+          terpel |
+          texaco |
+          biomax |
+          primax |
+          gulf |
+          zeuss |
+          petromil |
+          mobil |
+          esso |
+          br[íi]o |
+          ecopetrol
+      )\b
+
+  regex_peajes: 
+    categoria_codigo: D10200
+    categoria_nombre: Transporte
+    subcategoria_codigo: D10204
+    subcategoria_nombre: Peajes
+    regex: |
+      (?ix)
+      \b(
+        peaje(s)? |
+        cobro@v[ií]a |
+        autopista |
+        concesi[oó]n@vial |
+        recaudo@electr[oó]nico@de@peaje |
+        telepeaje |
+        flypass |
+        gopass
+      )\b
+      (?!.*\b(
+        parqueadero|multa|comparendo
+      )\b)
+
+  regex_parqueaderos: 
+    categoria_codigo: D10200
+    categoria_nombre: Transporte
+    subcategoria_codigo: D10205
+    subcategoria_nombre: Parqueaderos
+    regex: |
+      (?ix)
+      \b(
+        parqueadero |
+        parqueaderos |
+        estacionamiento |
+        parking |
+        parqueadero@p[uú]blico |
+        parqueadero@privado
+      )\b
+      (?!.*\b(
+        multa|comparendo|peaje
+      )\b)
+  regex_mantenimiento_vehicular: 
+    categoria_codigo: D10200
+    categoria_nombre: Transporte
+    subcategoria_codigo: D10206
+    subcategoria_nombre: Mantenimiento vehicular
+    regex: |
+      (?ix)
+      \b(
+        mantenimiento@preventivo |
+        mantenimiento@correctivo |
+        cambio@de@aceite |
+        cambio@de@filtros |
+        alineaci[oó]n |
+        balanceo |
+        revisi[oó]n@general@veh[ií]culo |
+        taller@mec[aá]nico |
+        revisi[oó]n@de@frenos |
+        revisi[oó]n@de@suspensi[oó]n
+      )\b
+      (?!.*\b(
+        repuestos?|llantas?|accesorios?|concesionario|venta@de@veh[ií]culos?
+      )\b)
+
+  regex_seguro_vehicular: 
+    categoria_codigo: D10200
+    categoria_nombre: Transporte
+    subcategoria_codigo: D10207
+    subcategoria_nombre: Seguro vehicular
+    regex: |
+      (?ix)
+      \b(
+        seguro@todo@riesgo |
+        seguro@veh[ií]cular |
+        p[oó]liza@de@autom[oó]vil |
+        seguro@de@carro |
+        seguro@de@moto
+      )\b
+      (?!.*\b(
+        soat|seguro@de@vida|seguro@de@hogar
+      )\b)
+
+  regex_alquiler_vehiculo: 
+    categoria_codigo: D10200
+    categoria_nombre: Transporte
+    subcategoria_codigo: D10208
+    subcategoria_nombre: Alquiler vehículo
+    regex: |
+      (?ix)
+      \b(
+        alquiler@de@veh[ií]culos? |
+        renta@de@carros? |
+        alquiler@de@carro |
+        renta@de@auto |
+        alquiler@de@moto |
+        renta@de@moto
+      )\b
+      (?!.*\b(
+        leasing|compra|cr[eé]dito
+      )\b)
+      
+  regex_revision_tecnicomecanica: 
+    categoria_codigo: D10200
+    categoria_nombre: Transporte
+    subcategoria_codigo: D10209
+    subcategoria_nombre: Revisión tecnicomecánica
+    regex: |
+      (?ix)
+      \b(
+        revisi[oó]n@tecnic(o)?[-\s]*mec[aá]nic(a)? |
+        tecnomec[aá]nica |
+        t[eé]cnico@mec[aá]nica |
+        cda |
+        centro@de@diagn[oó]stico@automotor |
+        inspecci[oó]n@vehicular
+      )\b
+      (?!.*\b(
+        taller|repuestos?|lavado|seguro|soat
+      )\b)
+
+  # ============================================================
+  # Categoria: Salud y Bienestar
+  # Subcategoria: BELLEZA
+  # Servicios estéticos presenciales
+  # Ej: peluquerías, barberías, spa, uñas, cejas, pestañas,
+  # masajes, depilación, estética corporal, sauna, turcos.
+  # Se paga por un SERVICIO estético.
+  # ============================================================
+  # ============================================================
+  # Categoria: Salud y Bienestar
+  # Subcategoria: SALUD COMPLEMENTARIA
+  # Planes complementarios, medicina prepagada, pólizas de salud,
+  # asistencias médicas y servicios de ambulancia.
+  # Ej: Sura medicina prepagada, Colsanitas, MedPlus,
+  # plan complementario Compensar, ambulancias, emergencias médicas.
+  # ============================================================
+  regex_salud_complementaria: 
+    categoria_codigo: D10300
+    categoria_nombre: Salud y Bienestar
+    subcategoria_codigo: D10301
+    subcategoria_nombre: Planes y coberturas médicas
+    regex: |
+      (?ix)
+      (
+        \b(
+          medicina@prepagada |
+          med@prepagada |
+          prepaga(?:da|do)? |
+          plan(?:es)?@complementari[oa]s? |
+          plan@complementari[oa] |
+          plan@de@salud |
+          salud@complementaria |
+          eps@complementaria |
+          cobertura@en@salud |
+          pol[ií]za@de@salud |
+          seguro@de@salud |
+          asistencia@m[eé]dica |
+          asistencia@en@salud |
+          ambulancia[s]? |
+          traslado@m[eé]dico |
+          emergencias?@m[eé]dicas? |
+          emergencia@m[eé]dica |
+          sura@medicina@prepagada |
+          sura@salud |
+          colm[eé]dica(?:@prepagada)? |
+          colsanitas |
+          sanitas |
+          medplus |
+          emer(?:m[eé])?dica |
+          axa@salud |
+          axa@colpatria@salud |
+          mapfre@salud |
+          bol[ií]var@salud |
+          seguros@bol[ií]var |
+          compensar(?:@salud)? |
+          compensar@complementario |
+          plan@complementario@compensar |
+          coomeva@salud |
+          coomeva@emergencia@m[eé]dica |
+          (?=.*\bcaja\b)(?=.*\bcompensaci[oó]n\b)
+        )\b
+        (?!.*\b(
+          veterinari[ao]s?|mascota[s]?|animal(es)?|
+          gimnasio|gym|
+          est[eé]tica|spa|belleza
+        )\b)
+      )
+  # ============================================================
+  # Categoria: Salud y Bienestar
+  # DROGUERÍAS
+  # Definición: Compra en farmacias
+  # ============================================================
+  regex_droguerias: 
+    categoria_codigo: D10300
+    categoria_nombre: Salud y Bienestar
+    subcategoria_codigo: D10302
+    subcategoria_nombre: Droguerías
+    regex: |
+      (?ix)
+      (
+        \b(
+          drog(uer[ií]a|as?) |
+          farmacia[s]? |
+          botica[s]? |
+          farmatodo |
+          la@rebaja |
+          cruz@(verde|azul) |
+          farmaprecios |
+          super@?drog(uer[ií]a|as) |
+          hiper@?drog(uer[ií]a|as) |
+          servidrogas |
+          zona@?farma |
+          prevensalud |
+          farmavid |
+          interfarma
+        )\b
+        (?!.*\b(
+          veterinari[ao]s?|mascota[s]?|animal(es)?|
+          est[eé]tica|spa|belleza
+        )\b)
+      )
+
+  regex_cosmeticos:
+    categoria_codigo: D10600
+    categoria_nombre: Compras y consumo
+    subcategoria_codigo: D10603
+    subcategoria_nombre: Cosméticos
+    regex: |
+      (?ix)
+      (
+        (?!.*\b(
+            spa|est[eé]tica|peluquer[ií]a|barber[ií]a|barbershop|
+            salon|sal[oó]n|
+            mascotas?|pet|vet(erinary)?|veterinari[ao]s?|
+            bar\b|bares?|restaurante|comida|
+            lavaautos|car@wash|lavadero|
+            ferreter[ií]a|hogar|
+            hotel|hostel|
+            eds|estacion@de@servicio|combustible|gasolina
+        )\b)
+
+        \b(?:
+          cosm[eé]ticos?|
+          cosmetic(?:s|os|as)?|
+          cosmeti\b|cosmetiq\w*|
+          ecosmetica|
+          cosmetika|
+          maquillaje|
+          make@?up|
+          base@de@maquillaje|
+          labial(?:es)?|
+          lipstick|
+          rimel|r[ií]mel|
+          mascara@de@pesta[nñ]as|
+          sombra(?:s)?|
+          corrector(?:es)?|
+          polvo@facial|
+          rubor
+        )\b
+        |
+        \b(?:
+          dermocosm[eé]ticos?|
+          cuidado@personal|
+          cuidado@de@la@piel|
+          skincare|
+          skin@?care|
+          dermo(?:@?|-)cosmeticos?|
+          cutis|
+          cremas?|
+          serum(?:s)?|
+          protector@solar|
+          bloqueador@solar|
+          anti(?:-|@?)edad|
+          limpieza@facial
+        )\b
+        |
+        \b(?:
+          perfumer[ií]as?|
+          perfumeri|
+          perfum\b|
+          perumery|
+          perfume(?:s)?|
+          fragran(?:cia|cias|ce|ces)|
+          colonia(?:s)?|
+          eau@de@(?:parfum|toilette)|
+          isla@de@los@perfumes?
+        )\b
+        |
+        \b(?:
+          beauty@store|
+          beauty@shop|
+          cosmetic@store|
+          cosmetic@shop|
+          tienda@de@cosmeticos|
+          tienda@de@belleza
+        )\b
+        |
+        \b(?:
+          esika|essika|
+          cyzone|
+          lbel|lebel|belcorp|
+          yanbal|
+          natura(?:@cosmeticos)?|
+          mary@?kay|
+          mac\b|
+          seytu|
+          hinode|
+          valmy|
+          monreve|
+          vogue|
+          victoria'?s?@?secret|
+          masglo|
+          medipiel|
+          senthia|
+          bella@piel|
+          dermablend|
+          blush@bar|
+          bath@?(?:&|and)@?body@?works|
+          fedco|
+          cromantic(?:@\w+)?|
+          loccitane(?:@en@provence)?|
+          occitane|
+          laskin|
+          burbuja@lbel
+        )\b
+      )
+
+  regex_tecnologia: 
+    categoria_codigo: D10600
+    categoria_nombre: Compras y consumo
+    subcategoria_codigo: ""
+    subcategoria_nombre: Tecnología
+    regex: |
+      (?ix)
+      (?!
+          .* \b(
+              odontolog[ií]a |
+              odontol[oó]gic[ao]s? |
+              odontodent |
+              clinica@(medica|odontologica|estetica) |
+              hospital@(universitario|general) |
+              universidad@tecnolog[ií]ca |
+              tecnolog[ií]a@(dental|m[eé]dica|industrial|alimenticia) |
+              tratamiento@tecnolog[ií]co |
+              medicina@prepagada |
+              salud |
+              laboratorio |
+              optica |
+              optometr[ií]a |
+              oftalmolog[ií]a |
+              clinicas?@est[eé]tica |
+              veterinaria |
+              biotecnolog[ií]a |
+              agrotecnolog[ií]a
+          )\b
+      )
+      (
+          tecnolog[ií]a |
+          informatica |
+          tecnologic[oa]s? |
+          alta@tecnologia |
+          gama@alta@tecnologia |
+          centro@de@(alta@)?tecnologia |
+          compucentro |
+          compumall |
+          unilago |
+          lagocentro |
+          multitec@plaza |
+          cyberplaza |
+          silicon@store |
+          tech@market |
+          falabella@(tecnologia|electronica) |
+          exito@(tecnologia|electronica) |
+          alkosto |
+          ktronix |
+          jumbo@electrodom[eé]sticos? |
+          panamericana@(tecnologia|electronica) |
+          innova@tecnologia |
+          sinergia(@y)?@tecnologia |
+          smart5g@tecnologia |
+          mobiltec@tecnologia |
+          duarte@tecnologia |
+          tecnoshop |
+          tecnobox |
+          storetecnologic[o]? |
+          power@tecnologia |
+          pombo@tecnologia |
+          shaddai@tecnologia |
+          audiocom |
+          okahoma(@soluc(iones?)?@informa(tica)?)? |
+          soluciones?@informatica |
+          celulares?@y@accesorios |
+          accesorios@(celulares|tecnologicos) |
+          celularcom |
+          boutique@celular |
+          ifix(store|it)? |
+          celu@store |
+          tech@store |
+          tienda@de@celulares |
+          computador(?:es)? |
+          portatil(?:es)? |
+          laptops? |
+          videojuegos |
+          consola@(playstation|nintendo|xbox) |
+          playstation |
+          nintendo@switch |
+          xbox |
+          iphone |
+          ipad |
+          samsung@store |
+          xiaomi@store |
+          huawei@store |
+          motorola@store
+      )\b
+  # ============================================================
+  # CONSULTAS MÉDICAS
+  # Definición: Especialistas, medicina alternativa,
+  # psicología, odontología particular
+  # ============================================================
+  regex_consultas_medicas: 
+    categoria_codigo: D10300
+    categoria_nombre: Salud y Bienestar
+    subcategoria_codigo: D10303
+    subcategoria_nombre: Consultas médicas
+    regex: |
+      (?ix)
+      (
+        \b(
+          consulta[s]?@m[eé]dica[s]? |
+          consulta@especializada |
+          especialista[s]? |
+          psicolog[ií]a |
+          psic[oó]logo[s]? |
+          psiquiatr[ií]a |
+          medicina@alternativa |
+          medicina@natural |
+          homeopat[ií]a |
+          acupuntura |
+          odontolog[ií]a |
+          odont[oó]logo[s]? |
+          dental |
+          consultorio[s]? |
+          consultor(i|io)@m[eé]dico |
+          cita@m[eé]dica
+        )\b
+        (?!.*\b(
+          veterinari[ao]s?|mascota[s]?|
+          seguro[s]?|eps|prepagada
+        )\b)
+      )
+  # ============================================================
+  # EXÁMENES MÉDICOS
+  # Definición: Laboratorios e imágenes diagnósticas
+  # ============================================================
+  regex_examenes_medicos: 
+    categoria_codigo: D10300
+    categoria_nombre: Salud y Bienestar
+    subcategoria_codigo: D10304
+    subcategoria_nombre: Exámenes médicos
+    regex: |
+      (?ix)
+      (
+        \b(
+          laboratorio@cl[ií]nic[o]? |
+          laboratorio@diagn[oó]stic[o]? |
+          ex[aá]menes?@m[eé]dicos? |
+          imagen(es)?@diagn[oó]stica[s]? |
+          radiolog[ií]a |
+          rayos?@?x |
+          ecograf[ií]a |
+          tomograf[ií]a |
+          resonancia@magn[eé]tica |
+          mamograf[ií]a |
+          an[aá]lisis@cl[ií]nic[o]s?
+        )\b
+        (?!.*\b(
+          veterinari[ao]s?|mascota[s]?|
+          gimnasio|est[eé]tica
+        )\b)
+      )
+
+  # ============================================================
+  # TERAPIAS
+  # Definición: Fisioterapia y terapias afines
+  # ============================================================
+  regex_terapias: 
+    categoria_codigo: D10300
+    categoria_nombre: Salud y Bienestar
+    subcategoria_codigo: D10305
+    subcategoria_nombre: Terapias
+    regex: |
+      (?ix)
+      (
+        \b(
+          terapia[s]? |
+          fisioterapia |
+          fisio@terapia |
+          terapia@f[ií]sica |
+          rehabilitaci[oó]n |
+          terapia@ocupacional |
+          terapia@respiratoria |
+          kinesiolog[ií]a |
+          masoterapia@cl[ií]nica
+        )\b
+        (?!.*\b(
+          spa|relajaci[oó]n|masaje@relajante|
+          est[eé]tica|belleza
+        )\b)
+      )
+
+  # ============================================================
+  # GIMNASIO
+  # Definición: Membresías o clases
+  # ============================================================
+  regex_gimnasio: 
+    categoria_codigo: D10300
+    categoria_nombre: Salud y Bienestar
+    subcategoria_codigo: D10306
+    subcategoria_nombre: Gimnasio
+    regex: |
+      (?ix)
+      (
+        \b(
+          gym |
+          gimnasio[s]? |
+          fitness |
+          smart@?fit |
+          bodytech |
+          crossfit |
+          entrenamiento |
+          entrenamiento@funcional |
+          clases?@de@(yoga|pilates|spinning|boxeo) |
+          membres[ií]a@gym |
+          plan@mensual@gym
+        )\b
+        (?!.*\b(
+          belleza|spa|est[eé]tica|
+          veterinari[ao]s?
+        )\b)
+      )
+
+  # ============================================================
+  # BELLEZA
+  # Definición: Spa, uñas, salón de belleza,
+  # barbería, turcos, masajes
+  # ============================================================
+  # ============================================================
+  # SEGURO DE VIDA
+  # Definición: Póliza de protección personal
+  # ============================================================
+  regex_seguro_vida: 
+    categoria_codigo: D10300
+    categoria_nombre: Salud y Bienestar
+    subcategoria_codigo: D10308
+    subcategoria_nombre: Seguro de vida
+    regex: |
+      (?ix)
+      (
+        \b(
+          seguro@de@vida |
+          pol[ií]za@de@vida |
+          protecci[oó]n@personal |
+          protecci[oó]n@familiar |
+          amparo@vida |
+          cobertura@vida |
+          fallecimiento |
+          muerte@accidental |
+          renta@vitalicia |
+          vida@individual
+        )\b
+        (?!.*\b(
+          soat|veh[ií]culo|
+          hogar|mascota[s]?|
+          eps|medicina@prepagada
+        )\b)
+      )
+
+  # ============================================================
+  # EDUCACIÓN FORMAL
+  # Definición: Matrículas escolares o universitarias
+  # ============================================================
+  regex_educacion_formal: 
+    categoria_codigo: D10400
+    categoria_nombre: Educación
+    subcategoria_codigo: D10401
+    subcategoria_nombre: Educación formal
+    regex: |
+      (?ix)
+      (?!.*\b(
+          hogar|moda|ferreter[ií]a|hospital|universal(?!@street)|
+          motors|gas|terpel|caribe|cheers|colectivo|colchon|
+          colgate|colcafe|colpatria|colpensiones|colfondos|
+          colsanitas|colmedica|colgas|
+          librer[ií]a|papeler[ía]|curso@libre|taller|
+          virtual|online|guarder[ií]a
+      )\b)
+      (
+          \b(
+              universidad|universitari[ao]|univ\.?|u\.|
+              facultad|
+              JAVERI[AO]|KONRAD|ANDES|ROSARIO|USCO|UDEA|UDEC|
+              UTADEO|EAFIT|UNAL|UNAD|ICESI|CES|UCC|UCO|UDES|CUN
+          )\b
+          |
+          \b(
+              instituto|institut|
+              corporaci[oó]n|corp
+          )\b
+          |
+          \b(
+              coleg(?:io|ios)?|colg
+          )\b
+          |
+          \b(
+              jardin(?:es)?(?:@infantil)?|
+              liceo|kinder(?:garten)?
+          )\b
+      )
+
+  # ============================================================
+  # MATERIAL EDUCATIVO
+  # Definición: Cuadernos, libros, papelería
+  # ============================================================
+  regex_material_educativo: 
+    categoria_codigo: D10400
+    categoria_nombre: Educación
+    subcategoria_codigo: D10402
+    subcategoria_nombre: Material educativo
+    regex: |
+      (?ix)
+      (?!.*\b(
+          universidad|colegio|curso|academia|
+          virtual|online|restaurant|hotel
+      )\b)
+      (
+          \b(
+              librer[ií]a(?:@nacional)?|librerias?|
+              panamericana|
+              tornamesa|lerner|wilborada|koe|
+              books@and@books|buscalibre
+          )\b
+          |
+          \b(
+              libros?|book[s]?|audiolibros?
+          )\b
+          |
+          \b(
+              papeler[ií]a|cuadernos?|utiles?@escolares?|
+              office@depot
+          )\b
+          |
+          \b(
+              editorial(?:es)?|editores
+          )\b
+      )
+  # ============================================================
+  # EDUCACIÓN VIRTUAL
+  # Definición: Plataformas tipo Coursera, Platzi
+  # ============================================================
+  regex_educacion_virtual: 
+    categoria_codigo: D10400
+    categoria_nombre: Educación
+    subcategoria_codigo: D10403
+    subcategoria_nombre: Educación virtual
+    regex: |
+      (?ix)
+      (?!.*\b(
+          colegio|universidad|librer[ií]a|papeler[ií]a|
+          restaurante|hotel|hogar
+      )\b)
+      (
+          \b(
+              coursera|platzi|udemy|domestika|crehana|
+              edx|udacity|duolingo|openenglish|open@?english|
+              nextu|intelligent@training
+          )\b
+          |
+          \b(
+              plataforma@educativa|curso@online|
+              educaci[oó]n@virtual
+          )\b
+      )
+  # ============================================================
+  # GUARDERÍA
+  # Definición: Cuidado infantil
+  # ============================================================
+  regex_guarderia: 
+    categoria_codigo: D10400
+    categoria_nombre: Educación
+    subcategoria_codigo: D10404
+    subcategoria_nombre: Guardería
+    regex: |
+      (?ix)
+      (?!.*\b(
+          colegio|universidad|curso|hogar|hotel|restaurante
+      )\b)
+      (
+          \b(
+              guarder[ií]a|jard[ií]n@infantil|
+              kinder(?:garten)?|garden|
+              cuidado@infantil|maternal|
+              preescolar|primera@infancia
+          )\b
+      )
+  # ============================================================
+  # EDUCACIÓN INFORMAL
+  # Definición: Cursos no certificados, talleres, idiomas,
+  # arte, música y actividades creativas
+  # ============================================================
+  regex_educacion_informal: 
+    categoria_codigo: D10400
+    categoria_nombre: Educación
+    subcategoria_codigo: D10405
+    subcategoria_nombre: Educación informal
+    regex: |
+      (?ix)
+      (?!.*\b(
+          universidad|colegio|matr[ií]cula|
+          librer[ií]a|papeler[ií]a|hotel|restaurante
+      )\b)
+      (
+          \b(
+              academia|academy|acad
+          )\b
+          |
+          \b(
+              curso[s]?|taller(?:es)?|
+              capacitaci[oó]n|formaci[oó]n
+          )\b
+          |
+          \b(
+              idiomas?|lenguas?|language@centers?
+          )\b
+          |
+          \b(
+              music[aá]|arte|dibujo|pintura|danza|
+              teatro|fotograf[ií]a
+          )\b
+          |
+          \b(
+              cocina|gastronom[ií]a|reposter[ií]a|
+              manualidades|costura
+          )\b
+      )
+  # ============================================================
+  # 1. RESTAURANTES (comidas completas, mesas, parrilla)
+  # ============================================================
+  regex_restaurantes: 
+    categoria_codigo: D10500
+    categoria_nombre: Entretenimiento
+    subcategoria_codigo: D10501
+    subcategoria_nombre: Restaurantes
+    regex: |
+      (?ix)
+      (?!.*\b(
+        supermercado|market|tienda|drogueria|farmacia|
+        hotel|hostel|barberia|spa|gimnasio
+      )\b)
+      (
+        \b(
+          restaurante[s]? |
+          restaurant |
+          comida@casera |
+          almuerzo[s]? |
+          almuerzo@ejecutivo |
+          menu@del@dia |
+          cocina@internacional |
+          cocina@casera
+        )\b
+        |
+        \b(
+          parrilla |
+          steakhouse |
+          asadero |
+          parrillada
+        )\b
+      )
+  # ============================================================
+  # 2. CAFETERÍAS (café, postres, snacks)
+  # ============================================================
+  regex_cafeterias: 
+    categoria_codigo: D10500
+    categoria_nombre: Entretenimiento
+    subcategoria_codigo: D10502
+    subcategoria_nombre: Cafeterías
+    regex: |
+      (?ix)
+      (?!.*\b(
+        supermercado|tienda|drogueria|farmacia
+      )\b)
+      (
+        \b(
+          cafe |
+          café |
+          cafeteria[s]? |
+          coffee |
+          coffee@shop |
+          cafe@bar |
+          espresso
+        )\b
+        |
+        \b(
+          juan@valdez |
+          starbucks |
+          tostao |
+          pergamino |
+          cafe@oma |
+          juan@valdez@cafe
+        )\b
+      )
+  # ============================================================
+  # 3. COMIDA RÁPIDA (hamburguesas, pizzas, fast food)
+  # ============================================================
+  regex_comida_rapida: 
+    categoria_codigo: D10500
+    categoria_nombre: Entretenimiento
+    subcategoria_codigo: D10503
+    subcategoria_nombre: Comida rápida
+    regex: |
+      (?ix)
+      (
+        \b(
+          comida@rapida |
+          fast@food |
+          hamburguesas? |
+          pizza |
+          pizzeria |
+          perro@sencillo |
+          hot@dog |
+          salchipapa |
+          sandwich |
+          tacos
+        )\b
+        |
+        \b(
+          mcdonalds |
+          burger@king |
+          kfc |
+          subway |
+          dominos |
+          papa@johns |
+          little@caesars |
+          dunkin |
+          dunkin@donuts
+        )\b
+      )
+  # ============================================================
+  # 4. STREAMING / SUSCRIPCIONES DIGITALES
+  # ============================================================
+  regex_streaming: 
+    categoria_codigo: D10500
+    categoria_nombre: Entretenimiento
+    subcategoria_codigo: D10504
+    subcategoria_nombre: Streaming
+    regex: |
+      (?ix)
+      (
+        \b(
+          netflix |
+          spotify |
+          amazon@prime |
+          prime@video |
+          disney\+ |
+          disney@plus |
+          hbo |
+          hbo@max |
+          max |
+          apple@tv |
+          apple@tv\+ |
+          youtube@premium |
+          youtube@music |
+          deezer |
+          tidal |
+          paramount\+ |
+          vix |
+          crunchyroll
+        )\b
+        |
+        \b(
+          streaming |
+          suscripcion@digital |
+          plataforma@de@streaming |
+          video@on@demand
+        )\b
+      )
+  # ============================================================
+  # 5. CINE (boletas, salas, snacks)
+  # ============================================================
+  regex_cine: 
+    categoria_codigo: D10500
+    categoria_nombre: Entretenimiento
+    subcategoria_codigo: D10505
+    subcategoria_nombre: Cine
+    regex: |
+      (?ix)
+      (
+        \b(
+          cine |
+          cinema |
+          peliculas? |
+          movie |
+          cartelera
+        )\b
+        |
+        \b(
+          cinepolis |
+          cinemark |
+          procinal |
+          royal@films |
+          cineland
+        )\b
+      )
+  # ============================================================
+  # 6. CONCIERTOS / EVENTOS MUSICALES
+  # ============================================================
+  regex_conciertos: 
+    categoria_codigo: D10500
+    categoria_nombre: Entretenimiento
+    subcategoria_codigo: D10506
+    subcategoria_nombre: Conciertos y espectáculos
+    regex: |
+      (?ix)
+      (
+        \b(
+          concierto[s]? |
+          show |
+          espect[aá]culo |
+          recital |
+          festival@musical |
+          evento@musical
+        )\b
+        |
+        \b(
+          tuboleta |
+          eticket |
+          ticketmaster |
+          ticketshop |
+          entradas?@evento
+        )\b
+      )
+  # ============================================================
+  # 7. JUEGOS (videojuegos, casinos, playland)
+  # ============================================================
+  regex_juegos: 
+    categoria_codigo: D10500
+    categoria_nombre: Entretenimiento
+    subcategoria_codigo: D10507
+    subcategoria_nombre: Juegos
+    regex: |
+      (?ix)
+      (
+        \b(
+          videojuegos? |
+          gaming |
+          gamer |
+          game@store
+        )\b
+        |
+        \b(
+          steam |
+          epic@games |
+          playstation |
+          xbox |
+          nintendo |
+          riot@games |
+          blizzard |
+          battlenet
+        )\b
+      )
+  # ============================================================
+  # 8. SALIDAS SOCIALES (bares, discotecas)
+  # ============================================================
+  regex_salidas_sociales: 
+    categoria_codigo: D10500
+    categoria_nombre: Entretenimiento
+    subcategoria_codigo: D10508
+    subcategoria_nombre: Salidas sociales
+    regex: |
+      (?ix)
+      (
+        \b(
+          bar |
+          bares |
+          pub |
+          discoteca |
+          nightclub |
+          karaoke
+        )\b
+        |
+        \b(
+          rumba |
+          fiesta |
+          cover |
+          entrada@discoteca
+        )\b
+      )
+  # ============================================================
+  # 9. EVENTOS CULTURALES (ferias, museos, exposiciones)
+  # ============================================================
+  regex_eventos_culturales: 
+    categoria_codigo: D10500
+    categoria_nombre: Entretenimiento
+    subcategoria_codigo: D10509
+    subcategoria_nombre: Eventos culturales
+    regex: |
+      (?ix)
+      (
+        \b(
+          museo |
+          museos |
+          exposicion |
+          galeria@de@arte |
+          feria@cultural
+        )\b
+        |
+        \b(
+          teatro |
+          obra@de@teatro |
+          dramaturgia
+        )\b
+      )
+  # ============================================================
+  # 10. SUSCRIPCIONES A CLUBES (sociales / deportivos)
+  # ============================================================
+  regex_suscripciones_clubes: 
+    categoria_codigo: D10500
+    categoria_nombre: Entretenimiento
+    subcategoria_codigo: D10510
+    subcategoria_nombre: Suscripciones a clubes
+    regex: |
+      (?ix)
+      (?!.*\b(
+          streaming|cine|restaurante|supermercado|
+          café|hotel|bar
+      )\b)
+      \b(
+          club@(social|deportivo|campestre|recreativo)|
+          membresía|cuota@mensual|suscripción@club|
+          corporación@recreativa|
+          caja@de@compensación|cafam|colsubsidio|compensar|
+          comfama|cajacopi|
+          caja(?:@de)?@compensac[ií]ón(?:@(?:[A-ZÁÉÍÓÚ0-9]{1,10})){0,5}|
+          cargo@por@recaudo@con@debito@automatico@de@(club|corporacion@recreativa)
+      )\b
+  # ============================================================
+  # ROPA – Vestuario personal (SIN CALZADO)
+  # ============================================================
+  regex_ropa: 
+    categoria_codigo: D10600
+    categoria_nombre: Compras y consumo
+    subcategoria_codigo: D10601
+    subcategoria_nombre: Ropa
+    regex: |
+      (?ix)
+      (
+        (?!.*\b(?:aeropark|europa|llucmaj|esuropa|automotores|air@europa|
+            ferropanel|brisas@del@eden|farmanorte|enthymion|
+            carnicer[íi]a@boutiq(?:ue|ur)?|eds@hym|stilo@hym|
+            ent[h]?ymion|faceb[k]?|airbnb|bioenerg[ií]a|supermaxi|
+            deli(?:cias)?@del@campo|hymde\d*|hmde\d*|hmyr|hy[mr]\w{4,}|
+            haussmann|coffee|pharmacy|hotel|torrej[oó]n|amsterdam|
+            lyon|palma@d|zafra|hulhule|miami|paris|ancon|quebec|
+            supermercado|market|restaurante)\b)
+
+        (?:
+          tienda@de@ropa|
+          ropa(?:@(?:interior|[íi]ntima|deportiva|y@accesorios|trendy))?|
+          vestuario|
+          boutique[s]?|boutiqur|
+          confecciones|
+          moda|la@moda|el@templo@de@la@moda|
+          infantil(?:es)?|
+          lencer[ií]a|intim(?:a|idad)|
+          marroquiner[ií]a|marroquineria|
+          maletas|carteras|bolsos|morral(?:es)?
+        )\b
+        |
+        \b(?:
+          jeans?|pantalones?|camisas?|blusas?|
+          camisetas?|polos?|chaquetas?|abrigos?|
+          sudaderas?|buzos?|vestidos?|
+          faldas?|shorts?|leggins?|
+          brasieres?|brasier|calzones?|panties|
+          ropa@interior
+        )\b
+        |
+        \b(?:
+          jeans@y@(?:polos|chaquetas|blusas)|
+          (?:dreamer|classic|eden|dirtyjeans|foxx|re\.dox|mind)@jeans|
+          kenzo@jeans|pantyjeans|jeans@y@chaquetas|t@?y@?t@jeans|
+          splot@jeans|jean@kolor|pull@?man@jeans|
+          las@blusas@de|
+          stil[oa]s@y@blusas|
+          mercado@pago\*blusas
+        )\b
+        |
+        \b(?:
+          arturo@?calle|koaj|gef|punto@?blanco|
+          facol|caribe@?tex|patprimo|lucho@?sport|
+          almace?n(?:es)?@?lucho@?sport|
+          ela|esprit|evacol|fajatex|
+          fds(?:@?outlet)?|
+          las@gatas|lasgatas|la@moda@joven|la@moda|
+          leonisa|leo?is?na|lili@?pink|lili-pink|
+          mario@?hernandez|palacio@del@cuero|
+          lobocueros|marycec|megatextil|
+          kids@?republic|herpo|carlos@?nieto|
+          color@?blue|diane@?(?:&|y)?@?geordi|
+          laura@?v|americanino|
+          feria@del@brasier(?:@y@solo@kuk)?|
+          off@?corss|by@?off@?corss|
+          studio@?f|chevignon|chevig?non|
+          levis|levi(?:'|´|`|’)?s|
+          lee\b|wrangler|diesel|
+          pepe@?jeans|true@?religion|
+          tommy@?jeans|under@?jeans|under@?armour|underarmour|
+          tommy@?hilfiger|ralph@?lauren|
+          polo(?:@?ralph@?lauren)?|
+          lacoste|calvin@?(?:klein|k?lein)|
+          michael@?kors|guess|nautica|coach|
+          american@?eagle|aeropostale|
+          banana@?republic|express|
+          victoria(?:'s)?@?secret|vs@?lingerie|
+          oysho|intimissimi|etam|
+          springfield|desigual|
+          zara|bershka|
+          pull(?:@?&@?|)@?bear|pullbear|
+          stradivarius|mango|
+          massim(?:o|o@?)dutti|massimodutti|
+          hm\b|h[\&y]?m|gap|
+          old@?navy|uniqlo|
+          forever(?:@?21)?|forever21|
+          \bluber\b|
+          louis@?vuitton|louis@?barton|louisbarton|
+          colouis@?barton|prada|gucci|hermes|
+          fendi|dolce@?&@?gabbana|
+          bimba@?y@?lola|hoss@?intropia|
+          swatch@?store|
+          nike|adidas|puma|reebok|fila|umbro|k[\s-]?swiss|
+          columbia|north@?face|patagonia|
+          totto|totto@store|totto@maletas|
+          lego@?store|bongo
+        )\b
+        |
+        \b(?:
+          mic@(?:santafe|viva|unicentro|mall|caucasia|barranquilla|florida|tesoro|castillo|central|nuestro|gran@estacion|plaza|centro|candelaria|parque@fabricato|oviedo|bulevar|chipichape|floresta|zapatoca)\b
+        )\b
+        |
+        \b(?:
+          almac[eé]n(?:es)?@(?:facol|de@ropa|gigante|universal)|
+          outlet|factory@outlet|
+          brand@?store|
+          palacio@de@la@panta(?:lon)?
+        )\b
+      )
+
+  # ============================================================
+  # CALZADO – Zapatos, tenis, botas
+  # ============================================================
+  regex_calzado: 
+    categoria_codigo: D10600
+    categoria_nombre: Compras y consumo
+    subcategoria_codigo: D10602
+    subcategoria_nombre: Calzado
+    regex: |
+      (?ix)
+      (
+        (?!.*\b(?:veterinaria|mascotas?|agro|hotel|
+            supermercado|market|restaurante|
+            farmacia|pharmacy|coffee|
+            ferreter[ií]a|hogar|muebles|
+            repuestos?|automotriz)\b)
+
+        (?:
+          (?:\d{0,4}@?)?calzatodo |
+          calzado|
+          zapato(?:[sc])?|zapater[ií]a|
+          tenis|tenni?s|
+          sneakers?|shoes?|
+          botas?|botines?|botin(?:es)?|
+          martens|dr(?:\.?@?)?martens|timberland|
+          sandalias?|sandalia(?:s)?|chanclas|
+          balerinas?|balerin(?:a|as)|mocasines?|
+          tacones?|plataformas?|
+          alpargatas?|espadrilles?
+        )\b
+        |
+        \b(?:
+          (?:\d{0,4}@?)?calzatodo|
+          calzamundo|
+          calzacosta|
+          calzadora|
+          calzamos(?:@(?:bien|de@moda|de@colombia))?|
+          huellas@calzado|
+          feria@de@zapatos|
+          mussi@zapatos|
+          te@calzamos(?:@bien)?
+        )\b
+        |
+        \b(?:
+          bosi|velez|nappa|
+          nike|adidas|puma|reebok|skechers|
+          converse|vans|clarks|aldo|crocs|
+          timberland|
+          dr(?:\.?@?)?martens|martens|
+          steve@?madden|
+          fila|umbro|
+          new@?balance|
+          under@?armour|underarmour|
+          k[\s-]?swiss|
+          geox|
+          ugg
+        )\b
+        |
+        \b(?:
+          zapateria|zapaterias|
+          tienda@de@zapatos|
+          outlet@de@calzado|
+          tienda@tenis
+        )\b
+      )
+  # ============================================================
+  # COSMÉTICOS
+  # Compra de productos de belleza
+  # Ej: maquillaje, cremas, perfumes, skincare,
+  # dermocosméticos, perfumerías y tiendas de cosmética.
+  # Se paga por PRODUCTOS de belleza.
+  # ============================================================
+  regex_belleza: 
+    categoria_codigo: D10300
+    categoria_nombre: Salud y Bienestar
+    subcategoria_codigo: D10307
+    subcategoria_nombre: Belleza
+    regex: |
+      (?ix)
+      (
+        (?!.*\b(
+          veterinari[ao]s?|mascota[s]?|
+          mascotas?|pet|vet(erinary)?|
+          gimnasio|gym|
+          droguer[ií]a|farmacia|
+          bar\b|bares?|restaurante|comida|
+          lavaautos|car@wash|lavadero|
+          ferreter[ií]a|hogar|
+          hotel|hostel|
+          eds|estacion@de@servicio|combustible|gasolina
+        )\b)
+
+        \b(?:
+          belleza |
+          salon(?:es)?@de@belleza |
+          peluquer[ií]a |
+          barber[ií]a |
+          barbershop |
+          barber@shop |
+          spa |
+          spa@u[nñ]as |
+          nail@spa |
+          nails? |
+          u[nñ]as |
+          manicure |
+          pedicure |
+          cejas |
+          pesta[nñ]as |
+          lifting@de@pesta[nñ]as |
+          depilaci[oó]n |
+          microblading |
+          masajes? |
+          salas?@de@masaje |
+          ba[nñ]os?@turcos |
+          turco |
+          sauna |
+          estetica |
+          estetica@corporal |
+          tratamiento@facial |
+          limpieza@facial |
+          tratamiento@capilar |
+          spa@capilar |
+          alaciado |
+          keratina
+        )\b
+      )
+
+  # ============================================================
+  # ELECTRODOMÉSTICOS
+  # Línea blanca · Pequeños electrodomésticos · Retail electro
+  # ============================================================
+  regex_electrodomesticos: 
+    categoria_codigo: D10600
+    categoria_nombre: Compras y consumo
+    subcategoria_codigo: D10605
+    subcategoria_nombre: Electrodomésticos
+    regex: |
+      (?ix)
+      (
+        (?!.*\b(
+            muebles?|colchones?|decoraci[oó]n|
+            ferreter[ií]a|construcci[oó]n|materiales?@de@construcci[oó]n|
+            inmobiliaria|constructora|arrendamientos?|bienes@ra[ií]ces|
+            restaurante|comida|market|supermercado|
+            ropa|moda|zapatos?|calzado|
+            tecnolog[ií]a|software|celulares?
+        )\b)
+
+        \b(?:
+          electrodom[eé]sticos?|
+          linea@blanca|
+          electrohogar|
+          artefactos?@el[eé]ctricos?|
+          aparatos?@el[eé]ctricos?|
+          enseres?@dom[eé]sticos?
+        )\b
+        |
+        \b(?:
+          neveras?|refrigeradores?|refrigeradoras?|
+          lavadoras?|secadoras?|lavanderas?|
+          estufas?|hornos?(?:@(?:microondas|el[eé]ctricos?))?|
+          microondas?|
+          congeladores?|freezer(?:s)?|
+          campanas?@extractoras?|
+          lavavajillas?|
+          cocinas?@(?:integrales?|empotradas?|modulares?)|
+          centros?@de@lavado
+        )\b
+        |
+        \b(?:
+          licuadoras?|batidoras?|procesadoras?@de@alimentos|
+          freidoras?@(?:de@aire|sin@aceite|el[eé]ctricas?)|
+          cafeteras?|m[aá]quinas?@de@caf[eé]|
+          teteras?@el[eé]ctricas?|hervidores?|
+          tostadoras?|tostadores?|
+          sandwicheras?|parrillas?@el[eé]ctricas?|
+          planchas?(?:@(?:de@ropa|vap(?:or)?|el[eé]ctricas?))?|
+          aspiradoras?|
+          ventiladores?|abanicos?@el[eé]ctricos?|
+          aires?@acondicionados?|climatizadores?|
+          calefactores?|calentadores?|
+          purificadores?@de@aire|
+          humidificadores?|deshumidificadores?|
+          dispensadores?@de@agua|enfriadores?@de@agua
+        )\b
+      )
+
+  # ============================================================
+  # DECORACIÓN – cuadros, plantas, adornos, iluminación decorativa
+  # ============================================================
+  regex_decoracion: 
+    categoria_codigo: D10600
+    categoria_nombre: Compras y consumo
+    subcategoria_codigo: D10606
+    subcategoria_nombre: Decoración
+    regex: |
+      (?ix)
+      (
+        # -----------------------
+        # BLOQUE NEGATIVO
+        # -----------------------
+        (?!.*\b(
+            muebles?|sof[aá]s?|camas?|comedores?|colchones?|
+            electrodom[eé]sticos?|linea@blanca|neveras?|lavadoras?|estufas?|
+            ferreter[ií]a|construcci[oó]n|materiales?@de@construcci[oó]n|
+            inmobiliaria|constructora|bienes@ra[ií]ces|
+            ropa|moda|calzado|zapatos?|
+            supermercado|market|restaurante|comida|
+            tecnolog[ií]a|software|celulares?
+        )\b)
+
+        # -------------------------------------
+        # 1) TÉRMINOS GENERALES DE DECORACIÓN
+        # -------------------------------------
+        \b(?:
+          decoraci[oó]n|
+          decorativo[s]?|
+          decoraciones?|
+          adornos?@(?:para@el@hogar|del@hogar|decorativos?)|
+          ornamentos?|
+          embellecimiento
+        )\b
+        |
+        # -------------------------------------
+        # 2) OBJETOS DECORATIVOS
+        # -------------------------------------
+        \b(?:
+          adornos?|
+          figuras?|
+          esculturas?|
+          estatuillas?|
+          centros?@de@mesa|
+          porta(?:retratos?|fotos?)|
+          marcos?@(?:de@foto|para@fotos?)|
+          relojes?@de@pared|
+          espejos?@decorativos?|
+          floreros?|
+          jarrones?|
+          candelabros?|
+          porta(?:velas?|inciensos?)|
+          incensarios?
+        )\b
+        |
+        # -------------------------------------
+        # 3) ARTE Y PARED
+        # -------------------------------------
+        \b(?:
+          cuadros?|
+          lienzos?|
+          bastidores?|
+          posters?|
+          l[aá]minas?@decorativas?|
+          vinilos?@decorativos?|
+          calcoman[ií]as?@decorativas?|
+          murales?|
+          papel@tapiz|
+          fotograf[ií]a@decorativa|
+          arte@(?:mural|decorativo)|
+          grabados?
+        )\b
+        |
+        # -------------------------------------
+        # 4) TEXTILES DECORATIVOS
+        # -------------------------------------
+        \b(?:
+          cortinas?|
+          visillos?|
+          persianas?@decorativas?|
+          tapetes?|
+          alfombras?@decorativas?|
+          cojines?@decorativos?|
+          fundas?@decorativas?|
+          manteles?|
+          caminos?@de@mesa|
+          cubrecamas?@decorativos?|
+          colchas?@decorativas?|
+          tapices?|
+          gobelinos?
+        )\b
+        |
+        # -------------------------------------
+        # 5) PLANTAS Y ELEMENTOS NATURALES
+        # -------------------------------------
+        \b(?:
+          plantas?@(?:ornamentales?|artificiales?|decorativas?)?|
+          flores?@(?:artificiales?|secas?|decorativas?)?|
+          macetas?|
+          materas?|
+          jarrones?|
+          floreros?|
+          arreglos?@florales?|
+          plantas?@de@interior|
+          bonsai|
+          orqu[ií]deas?|
+          suculentas?|
+          terrarios?
+        )\b
+        |
+        # -------------------------------------
+        # 6) ILUMINACIÓN DECORATIVA
+        # -------------------------------------
+        \b(?:
+          velas?|
+          candelabros?|
+          l[aá]mparas?@decorativas?|
+          luces?@(?:ambientales?|decorativas?)|
+          guirnaldas?@de@luz|
+          bombillos?@decorativos?|
+          iluminaci[oó]n@decorativa|
+          spots?@decorativos?|
+          apliques?@de@pared|
+          faroles?|
+          antorchas?@decorativas?|
+          l[aá]mparas?@(?:de@mesa|de@pie|colgantes?)
+        )\b
+        |
+        # -------------------------------------
+        # 7) CERÁMICAS Y ACABADOS DECORATIVOS
+        # -------------------------------------
+        \b(?:
+          cer[aá]micas?@decorativas?|
+          decorcer[aá]mica|
+          maxcer[aá]mica@decorativa|
+          baldosas?@decorativas?|
+          azulejos?@decorativos?|
+          mosaicos?|
+          enchapes?@(?:decorativos?|y@apliques)|
+          revestimientos?@decorativos?|
+          acabados?@decorativos?
+        )\b
+        |
+        # -------------------------------------
+        # 8) PINTURAS Y ACABADOS ARTÍSTICOS
+        # -------------------------------------
+        \b(?:
+          pinturas?@decorativas?|
+          esmaltes?@decorativos?|
+          barnices?@decorativos?|
+          t[eé]cnicas?@decorativas?|
+          efectos?@decorativos?|
+          texturas?@decorativas?|
+          estuco@decorativo|
+          yeso@decorativo
+        )\b
+        |
+        # -------------------------------------
+        # 9) MARCAS / TIENDAS DECORACIÓN
+        # -------------------------------------
+        \b(?:
+          arte@hogar|
+          decoespacios?|
+          decol(?:muebles?|espacios?|hogar)?|
+          decorcer[aá]mica|
+          decocolombia|
+          decovida|
+          decohome|
+          ambiente@gourmet|
+          decor@gourmet|
+          hogar@gourmet|
+          espacio@gourmet|
+          dise[nñ]o@y@decoraci[oó]n|
+          casa@decoraci[oó]n|
+          mundo@decoraci[oó]n|
+          decoraci[oó]n@y@dise[nñ]o
+        )\b
+        |
+        # -------------------------------------
+        # 10) TEMPORADAS Y EVENTOS DECORATIVOS
+        # -------------------------------------
+        \b(?:
+          decoraci[oó]n@(?:navide[nñ]a|de@navidad)|
+          adornos?@navide[nñ]os?|
+          decoraci[oó]n@(?:de@fiestas?|tem[aá]tica)|
+          globos?@decorativos?|
+          serpentinas?|
+          papel@crep[eé]|
+          decoraci[oó]n@(?:de@eventos?|para@eventos?)
+        )\b
+      )
+
+
+  # ============================================================
+  # MASCOTAS / VETERINARIA – Alimento, clínicas, petshop, grooming
+  # ============================================================
+  regex_mascotas: 
+    categoria_codigo: D10600
+    categoria_nombre: Compras y consumo
+    subcategoria_codigo: D10607
+    subcategoria_nombre: Mascotas
+    regex: |
+      (?ix)
+      (
+        # -------------------------------------------------
+        # BLOQUE NEGATIVO (evitar confusiones comunes)
+        # -------------------------------------------------
+        (?!.*\b(
+            gasolina|eds|terpel|texaco|primax|brio|shell|petromil|
+            supermercado|market|restaurante|comida|bar|
+            moda|ropa|calzado|zapatos?|
+            ferreter[ií]a|construcci[oó]n|inmobiliaria
+        )\b)
+
+        # -------------------------------------------------
+        # 1) VETERINARIA / CLÍNICAS / SALUD ANIMAL
+        # -------------------------------------------------
+        \b(?:
+          vet(?:er?inari[ao]s?)?|
+          veterinaria(?:@?(?:animal|mascotas?|pet))?|
+          centro@?(?:veterinari[ao]|vet|vete)|
+          cl[ií]nica@?(?:veterinari[ao]|animal|vet)?|
+          hospital@?veterinari[ao]|
+          farmacia@?veterinari[ao]|
+          urgencias?@?veterinari[ao]s?|
+          medicina@?veterinari[ao]|
+          cirug[ií]a@?veterinari[ao]|
+          servicios?@?veterinari[ao]s?|
+          # Patrones truncados observados
+          veteri(?:nari?)?|
+          vete(?:rinari?)?|
+          cent(?:ro@?vet|ro@?vete)?
+        )\b
+        |
+        # -------------------------------------------------
+        # 2) PETSHOPS / TIENDAS DE MASCOTAS AMPLIADO
+        # -------------------------------------------------
+        \b(?:
+          mascotas?|
+          (?<=\w)mascotas?(?=\w)|  # permite MIMASCOTAS, MULTIMASCOTAS
+          mascotascom|  # casos pegados
+          pet(?:s|shop|store|center|house|planet|world|life|zone|boutique|spa|express|heaven|family|passion|lover|paradise)?|
+          animal(?:es|house|planet|world|life|center|care|lover|friends?|rescue|aid|asia|city|club|home|boutique|express)?|
+          animals(?:@\w+)?|  # animals + palabra
+          dog(?:s|shop|house|care|life|center|land|planet|lover|friends?|training)?|
+          cat(?:s|shop|house|care|life|center|land|planet|lover|friends?)?|
+          # Nombres específicos observados
+          animalitostiendave|
+          gatos@y@perros|
+          canes@y@amigos|
+          animale@\w+
+        )\b
+        |
+        # -------------------------------------------------
+        # 3) ALIMENTOS Y PRODUCTOS PARA MASCOTAS
+        # -------------------------------------------------
+        \b(?:
+          alimento[s]?@?(?:para@?)?(?:mascotas?|perros?|gatos?|animales?|peces?|aves?)|
+          concentrado[s]?|
+          croquetas?|
+          snack[s]?@?caninos?|
+          comida@?(?:para@?)?(?:mascotas?|perros?|gatos?)|
+          productos?@?(?:para@?)?(?:mascotas?|perros?|gatos?|animales?)|
+          accesorios?@?(?:para@?)?(?:mascotas?|perros?|gatos?)|
+          ropa@?(?:para@?)?(?:mascotas?|perros?|gatos?|canina|felina)
+        )\b
+        |
+        # -------------------------------------------------
+        # 4) SERVICIOS PARA MASCOTAS AMPLIADO
+        # -------------------------------------------------
+        \b(?:
+          peluquer[ií]a@?(?:canina|felina|animal)?|
+          grooming|
+          est[eé]tica@?(?:canina|felina|animal)?|
+          spa@?(?:canino|felino|para@?mascotas|animal)?|
+          hotel@?(?:canino|felino|para@?mascotas|animal)?|
+          guarder[ií]a@?(?:canina|felina|mascotas?|de@?mascotas)?|
+          paseo[s]?@?(?:de@?)?(?:perros?|caninos?)|
+          entren(?:amiento|ador)@?(?:canino|animal|de@?perros?)?|
+          adiestramiento@?(?:canino|animal)?|
+          psicolog[ií]a@?(?:canina|animal)?|
+          # Servicios adicionales
+          crematori(?:o|um)@?(?:animal|mascotas?|pet)?|
+          memorial@?(?:animal|mascotas?|pet)?
+        )\b
+        |
+        # -------------------------------------------------
+        # 5) ADOPCIÓN / FUNDACIONES / PROTECTORAS AMPLIADO
+        # -------------------------------------------------
+        \b(?:
+          fundaci[oó]n@?(?:animal|mascotas?|huellas?|peludos?)|
+          refugio@?(?:animal|mascotas?)|
+          protectora?@?(?:de@?)?(?:animales|mascotas)|
+          adopta@?(?:una?|un)?@?(?:mascota|amigo|peludo)|
+          huell(?:as?|itas?|itas@?(?:felices|de@?amor))|
+          pat(?:as?|itas?)|
+          colit(?:as?|as@?felices)|
+          # Nombres específicos de organizaciones
+          amig[oa]@?fiel
+        )\b
+        |
+        # -------------------------------------------------
+        # 6) AGROVETERINARIA / AGROPECUARIO RELACIONADO AMPLIADO
+        # -------------------------------------------------
+        \b(?:
+          # Patrones agro principales
+          agro(?:@\w+|\w+|mercado|pecuaria|pecuario|servicio|vet|veterinari[ao]|campo|market|tienda|finca)?|
+          \w+@agro|  # palabra + agro
+          agrop(?:ecuario|ag|servicio|servicios?)|
+          agricolas?|
+          agrov(?:entas?|et|et?erina|et?erinar|market)|
+          agroventas?(?:@norte)?|
+          agroalmac[eé]n|
+          almac[eé]n@agro|
+          casa@agropecuaria|
+          # Casos específicos observados
+          la@monta[ñn]a@agromercado|
+          campo@ganadero|
+          exi@?campo|
+          copalcol|
+          seragro|
+          mi@rancho(?:@(?:agrovet|agroveterinaria|agropecuaria))?|
+          maxicampo|
+          almacen@agricola@centr|
+          # Patrones pecuarios
+          \w*pecuari[ao]\w*|
+          # Fertilizantes y productos agrícolas
+          fito@?fertil(?:izante|izantes)?|
+          fertil(?:idad|izante|izantes)?|
+          (?:bio|nutri|agro)fertil|
+          fertil@(?:animal|suelo|cultivo)|
+          # Genética y distribuidores
+          genetica@selecta|
+          distribuidor@veterinar
+        )\b
+        |
+        # -------------------------------------------------
+        # 7) MARCAS Y TIENDAS CONOCIDAS AMPLIADO
+        # -------------------------------------------------
+        \b(?:
+          # Marcas principales
+          laika|
+          puppis|
+          petco|
+          tiendapet|
+          kanu@?vet|
+          agrocampo|
+          agrozan@?vet|
+          hogar@?animal|
+          mundo@?animal|
+          planeta@?perro|
+          multimascotas|
+          mimascotas|
+          mascotilandia|
+          mundimascotas|
+          # Marcas con animal
+          animalsasia|
+          animalaid|
+          protectormascotas|
+          naturanimal|
+          animalsve|
+          animalcenter|
+          animalcity|
+          animalx|
+          # Variaciones y truncados
+          animal[a-z]{2,5}|
+          animali[sx]?|
+          animaland(?:i[ao]|ia|ias)?|
+          animalah[ií]a|
+          animalagio|
+          animalun|
+          # Casos específicos
+          pei@shop|
+          naturalia(?:@?(?:vet|veterinari[ao]|centro))?|
+          vet@?center|
+          animal@?healths?|
+          little@?happy@?animals?|
+          dido(?:@?(?:pet|vet|animal|mascotas?))?|
+          maray@?(?:medicina|vet)
+        )\b
+        |
+        # -------------------------------------------------
+        # 8) CASOS ESPECÍFICOS Y PATRONES COMERCIALES
+        # -------------------------------------------------
+        \b(?:
+          # Patrones de mercado pago y comerciales
+          merpago@veterinariaart|
+          inseminar@de@colombia|
+          invers@medicas@veterin|
+          golden@medica@veterina|
+          critical@care@veterina|
+          clic@veter@hipocanes|
+          ah@neurologia@veterina|
+          acen@vrio@el@gndero@pt|
+          # Almacenes y tiendas con veterinaria
+          (?:almacen|tienda|mercado)@vete(?:rinari[ao]|r)?|
+          boutique@?(?:animal|canina|felina|para@?mascotas)
+        )\b
+      )
+
+  # ============================================================
+  # EVENTOS RELIGIOSOS – iglesias, aportes, celebraciones
+  # ============================================================
+  regex_eventos_religiosos: 
+    categoria_codigo: D10600
+    categoria_nombre: Compras y consumo
+    subcategoria_codigo: D10608
+    subcategoria_nombre: Eventos religiosos
+    regex: |
+      (?ix)
+      \b(
+        # ---------------------------------------------
+        # 1) INSTITUCIONES RELIGIOSAS
+        # ---------------------------------------------
+        iglesia |
+        parroquia |
+        capilla |
+        catedral |
+        basilica |
+        diocesis |
+        diócesis |
+        arquidiocesis |
+        arquidiócesis |
+        comunidad@religiosa |
+        congregaci[oó]n@religiosa |
+        orden@religiosa |
+        seminario |
+
+        # ---------------------------------------------
+        # 2) APORTES / DONACIONES
+        # ---------------------------------------------
+        diezmo |
+        ofrenda |
+        primicia |
+        aporte[s]?@religioso[s]? |
+        aporte[s]?@a@iglesia |
+        donaci[oó]n@(a@)?iglesia |
+        donaci[oó]n@religiosa |
+        contribuci[oó]n@religiosa |
+        unidef |
+        limosna |
+        ayuda@pastoral |
+
+        # ---------------------------------------------
+        # 3) CELEBRACIONES Y ACTOS RELIGIOSOS
+        # ---------------------------------------------
+        celebraci[oó]n@religiosa |
+        misa |
+        culto |
+        eucarist[ií]a |
+        comun[ií]on |
+        confirmaci[oó]n |
+        bautizo |
+        bautismo |
+        matrimonio@religioso |
+        boda@religiosa |
+        funeral@religioso |
+        exequias |
+        velaci[oó]n@religiosa |
+
+        # ---------------------------------------------
+        # 4) TEMPLOS Y LUGARES DE CULTO
+        # ---------------------------------------------
+        templo |
+        santuario |
+        casa@pastoral |
+        casa@cural |
+
+        # ---------------------------------------------
+        # 5) TÉRMINOS USADOS EN PAGOS / POS
+        # ---------------------------------------------
+        parroquial |
+        pastoral |
+        ministerio@religioso |
+        servicio@religioso |
+
+        # ---------------------------------------------
+        # 6) LIDERAZGO / ORGANIZACIÓN (muy común en pagos)
+        # ---------------------------------------------
+        pastor |
+        iglesia@cristiana |
+        iglesia@evang[eé]lica |
+        iglesia@cat[oó]lica |
+        iglesia@pentecostal |
+        ministerio@cristiano
+      )\b
+
+  # ============================================================
+  # MERCADO / SUPERMERCADO – alimentos para el hogar
+  # ============================================================
+  regex_supermercados_grandes_superficies:
+    categoria_codigo: D10600
+    categoria_nombre: Compras y consumo
+    subcategoria_codigo: D10609
+    subcategoria_nombre: Supermercados y grandes superficies
+    regex: |
+      (?ix)
+      ^
+      # ------------------------------------------------
+      # BLOQUE NEGATIVO INICIAL – exclusiones duras
+      # ------------------------------------------------
+      (?!@?(eds|estaci[oó]n@(de@)?servicio)\b)
+      (?!.*mercado@?pago)
+      (?!.*mercadopago)
+      (?!.*combustible)
+      (?!.*superintendencia)
+      (?!.*droguer[ií]a)
+      (?!.*farmacia)
+      (?!.*opticas?)
+      (?!.*colsubsidio(?!.*super))
+      (?!.*\b(agro|pecuario|mascotas?|vet|veterinari[ao]|animal|pet)\b)
+      (?!.*sao@?paulo)
+      (?!.*ara(?:cely|mar|dia|na))
+      (?!.*\b(
+          restaurante|
+          restau\w*|
+          comedor|
+          bar(?!@?ato)|
+          cafeter[ií]a|
+          caf[eé]@(?!internet|barato)|
+          coffee|
+          deli|
+          food|
+          tender@?d |
+          burger|
+          hamburg|
+          pollo@(a@la@brasa|asado|broaster|rostizado|al@h)|
+          pizza|
+          pizzer[ií]a|
+          sushi|
+          ramen|
+          burger@king|
+          kfc|
+          subway|
+          mcdonald'?s?|
+          dominos?|
+          jeno'?s|
+          papa@john'?s?|
+          crepes|
+          waffles|
+          juan@valdez|
+          hornitos|
+          el@corral|
+          andr[eé]s@carne@de@res|
+          il@giorno|
+          frisby|
+          toston|
+          bocatto|
+          beer@station|
+          cervez|
+          cervecer[ií]a
+      )\b)
+
+      (
+        # ------------------------------------------------
+        # 1) GRANDES SUPERFICIES / CADENAS AMPLIADAS
+        # ------------------------------------------------
+        \b(
+          almacenes?@exito|
+          grupo@exito|
+          exito(@(?:wow|express))?|
+          olimpica|
+          alkosto|
+          carulla|
+          jumbo|
+          sao\b|
+          surtimax|
+          metro\b(?!@(?:linea|cuadrilla|estaci[oó]n))|
+          metropol|
+          surtiplaza|
+          surtimayorista|
+          merkahorro|
+          mercado@zapatoca|
+          pricesmart|
+          makro|
+          super@inter(@\w+)?
+        )\b
+        |
+        # ------------------------------------------------
+        # 2) BANCOS DE ALIMENTOS / DONACIONES
+        # ------------------------------------------------
+        \b(
+          banco@de@alimentos?|
+          fundaci[oó]n@banco@de@alimentos?|
+          red@banco@de@alimentos?|
+          donaci[oó]n@de@alimentos?
+        )\b
+        |
+        # ------------------------------------------------
+        # 3) TIENDAS DISCOUNT / CONVENIENCIA
+        # ------------------------------------------------
+        \b(
+          tiendas?@ara|
+          tienda@d1|
+          tiendas?@d1|
+          oxxo
+        )\b
+        |
+        # ------------------------------------------------
+        # 4) SUPERMERCADOS / MERCADOS GENÉRICOS AMPLIADOS
+        # ------------------------------------------------
+        \b(
+          super@?mercad\w*|
+          hiper@?mercad\w*|
+          supermarket|
+          mercados?@\w+|
+          mini@?mercado\w*|
+          mini@?market|
+          micromerc\w*|
+          mercamio|
+          mercaldas|
+          servimercado|
+          autoservicio@\w+|
+          euro@supermercado(@\w+)?|
+          el@super|
+          mega@?tienda\w*
+        )\b
+        |
+        # ------------------------------------------------
+        # 5) SUPER/SURTTIENDAS AMPLIADAS
+        # ------------------------------------------------
+        \b(
+          super@?tienda\w*|
+          surt[iy]?@?tienda\w*|
+          surticarnes?\w*|
+          surtifamiliar
+        )\b
+        |
+        # ------------------------------------------------
+        # 6) CANASTA / DESPENSA AMPLIADA
+        # ------------------------------------------------
+        \b(
+          la@canasta(@(?:campesina|fresca))?|
+          gran@canasta|
+          autoservicio@la@canasta|
+          super@canasta|
+          despensa(@\w+)?|
+          canasto@market
+        )\b
+        |
+        # ------------------------------------------------
+        # 7) EMPRESAS DE ALIMENTOS ESPECIALIZADAS
+        # ------------------------------------------------
+        \b(
+          ecolimentos|
+          vidalimentos|
+          makro@alimentos|
+          cia@de@alimentos|
+          c/dora@(?:fresmar|carnes?|pollo|cerdo|pescado|fr[ií]os?)
+        )\b
+        |
+        # ------------------------------------------------
+        # 8) FRUTAS, VERDURAS, GRANOS AMPLIADOS
+        # ------------------------------------------------
+        \b(
+          \w*fruver\w*|
+          frutiver\w*|
+          fruvar\w*|
+          frutas?@y@verduras|
+          frut[oa]s?@y@verd|
+          viveres(@y@abarrotes)?|
+          abarrotes(?!.*panader[ií]a)|
+          granero\w*|
+          granos@y@abarrotes
+        )\b
+        |
+        # ------------------------------------------------
+        # 9) CARNES, LÁCTEOS, PESCADOS AMPLIADOS
+        # ------------------------------------------------
+        \b(
+          carnicer[ií]a\w*|
+          carnicos?@\w+|
+          carnes?@\w+|
+          porcicarnes?\w*|
+          expendio@de@carnes?|
+          fr[ií]os?@?carnes?|
+          districarnes?\w*|
+          frigor[ií]f\w*|
+          frigo\w+|
+          pollos?(@\w+)?|
+          lacteos?\w*|
+          queser[ií]a\w*|
+          pescados?\w*|
+          pesquera@\w+
+        )\b
+        |
+        # ------------------------------------------------
+        # 10) CAFÉ (productos no preparados)
+        # ------------------------------------------------
+        \b(
+          caf[eé]@\w+|
+          \w+@caf[eé]
+        )\b
+        |
+        # ------------------------------------------------
+        # 11) MARKET / EXPRESS AMPLIADO
+        # ------------------------------------------------
+        \b(
+          \w+@?market|
+          market@\w+|
+          market@express|
+          express@market|
+          fresh@market|
+          quick@market
+        )\b
+        |
+        # ------------------------------------------------
+        # 12) AUTOSERVICIOS Y VARIANTES MERK
+        # ------------------------------------------------
+        \b(
+          merk\w*|
+          merka\w*
+        )\b
+      )
+
+      # ------------------------------------------------
+      # BLOQUE NEGATIVO FINAL – ruidos conocidos
+      # ------------------------------------------------
+      (?!.*\b(
+          facebook|
+          facebk|
+          frigo@gas|
+          carne@deportiva|
+          club@carnes@premium
+      )\b)
+
+  # ============================================================
+  # SERVICIOS Y ASESORÍAS – trámites, permisos, notaría, funerarios
+  # ============================================================
+  regex_servicios_y_asesorias:
+    categoria_codigo: D10600
+    categoria_nombre: Compras y consumo
+    subcategoria_codigo: D10610
+    subcategoria_nombre: Servicios y asesorias
+    regex: |
+      (?ix)
+      \b(
+          notaria |
+          notarias |
+          camara@de@comercio |
+          registradur[ií]a |
+          visa |
+          permiso@residencia |
+          licencias? |
+          tasas?@judiciales |
+          juzgado |
+          rama@judicial |
+          fiscalia |
+          procuraduria |
+          defensoria |
+          servicios@funerarios |
+          funeraria |
+          crematorio |
+          sepelio |
+          asesorias? |
+          tramites?
+      )\b
+  # ============================================================
+  # DEPORTES / GYM / FITNESS
+  # ============================================================
+  regex_deportes:
+    categoria_codigo: D10600
+    categoria_nombre: Compras y consumo
+    subcategoria_codigo: D10611
+    subcategoria_nombre: Deportes
+    regex: |    
+      (?ix)
+      (
+        # ------------------------------------------------
+        # 1) TÉRMINOS GENERALES DE DEPORTE
+        # ------------------------------------------------
+          \b(
+            deporte[s]? |
+            deportiv[oa]s? |
+            tienda@deportiva |
+            almac[eé]n@deportivo |
+            club@deportivo |
+            centro@deportivo |
+            escuela@deportiva |
+            academia@deportiva |
+            soluciones@deportivas |
+            industria@deportiva[s]? |
+            moda@deportiva |
+            ropa@deportiva |
+            implementos?@deportivos |
+            casa@del@deportista
+          )\b
+          |
+          # ------------------------------------------------
+          # 2) GIMNASIOS / FITNESS / ENTRENAMIENTO
+          # ------------------------------------------------
+          \b(
+            gym(?:@?\w+)? |
+            gimnasio[s]? |
+            fitness |
+            fit\b |
+            fit@?(center|club|studio|box)? |
+            training |
+            training@center |
+            entrenamiento@(personal|funcional)? |
+            cross@?fit |
+            crossfit |
+            functional@?training |
+            box@training |
+            body@?(fit|tech|power|strong|factory)? |
+            athletic@fitness
+          )\b
+          |
+          # ------------------------------------------------
+          # 3) MARCAS Y CADENAS DE GYM (LATAM / CO)
+          # ------------------------------------------------
+          \b(
+            bodytech |
+            smart@?fit |
+            vida@?fit |
+            ufc@?gym |
+            gymplus |
+            trainingym |
+            sense@?gym |
+            master@?gym |
+            top@?gym |
+            tauros@?gym |
+            winners@?gym |
+            global@?gym(nastics)? |
+            optymus@?gym |
+            stark@?gym |
+            greek@gods@gym |
+            action@pro@gym |
+            buffalo?@?gym |
+            inter@?gym |
+            af@?gym
+          )\b
+          |
+          # ------------------------------------------------
+          # 4) DEPORTES ESPECÍFICOS / DISCIPLINAS
+          # ------------------------------------------------
+          \b(
+            f[uú]tbol |
+            escuela@de@f[uú]tbol |
+            f[uú]tbol@club |
+            soccer |
+            baloncesto |
+            basketball |
+            voleibol |
+            volleyball |
+            tenis |
+            padel |
+            p[aá]del |
+            golf |
+            nataci[oó]n |
+            swimming |
+            ciclismo |
+            ciclis[mt]a[s]? |
+            bike |
+            bike@shop |
+            spinning |
+            running |
+            atletismo |
+            boxeo |
+            boxing |
+            artes?@marciales |
+            mma |
+            karate |
+            taekwondo |
+            judo |
+            yoga |
+            pilates |
+            zumba
+          )\b
+          |
+          # ------------------------------------------------
+          # 5) CLUBES SOCIALES / RECREATIVOS / CAMPESTRES
+          # ------------------------------------------------
+          \b(
+            club@(social|recreativo|campestre|na[uú]tico) |
+            club@de@(tenis|golf|pesca|caza|nataci[oó]n|f[uú]tbol) |
+            centro@recreativo
+          )\b
+          |
+          # ------------------------------------------------
+          # 6) TIENDAS DEPORTIVAS / RETAIL
+          # ------------------------------------------------
+          \b(
+            decathlon |
+            interdeportes |
+            nike |
+            adidas |
+            puma |
+            reebok |
+            under@?armou?r |
+            fila |
+            umbro |
+            lotto |
+            new@?balance |
+            asics |
+            sportline |
+            tienda@nike |
+            tienda@adidas
+          )\b
+        )
+        # ------------------------------------------------
+        # BLOQUE NEGATIVO – EXCLUSIONES CLAVE
+        # ------------------------------------------------
+        (?!.*\b(
+            bath@?(and|&)@?body |
+            body@works |
+            bodybrite |
+            beyond@?body |
+            pets?@?mart |
+            toy@?smart |
+            jet@?smart |
+            aerol[ií]nea |
+            airlines? |
+            cultural |
+            ayto\.? |
+            madrid
+        )\b)
+
+  # ============================================================
+  # JOYERÍAS / RELOJERÍAS / ORFEBRERÍA
+  # ============================================================
+  regex_joyerias: 
+    categoria_codigo: D10600
+    categoria_nombre: Compras y consumo
+    subcategoria_codigo: D10612
+    subcategoria_nombre: Joyerías
+    regex: |
+      (?ix)
+      (
+        # ------------------------------------------------
+        # 1) TÉRMINOS GENERALES
+        # ------------------------------------------------
+        \b(
+          joya[s]? |
+          joyer[ií]a[s]? |
+          joyero[s]? |
+          joyer[ií]as?@y@relojer[ií]as? |
+          joyer[ií]a@fina |
+          alta@joyer[ií]a |
+          orfebrer[ií]a[s]? |
+          orfebre[s]?
+        )\b
+        |
+        # ------------------------------------------------
+        # 2) RELOJES / RELOJERÍAS
+        # ------------------------------------------------
+        \b(
+          reloj(?:es)? |
+          relojer[ií]a[s]? |
+          cron[oó]metro[s]? |
+          cron[oó]s |
+          time@?shop |
+          watch(?:es)? |
+          watch@?store
+        )\b
+        |
+        # ------------------------------------------------
+        # 3) MATERIALES PRECIOSOS
+        # ------------------------------------------------
+        \b(
+          oro |
+          plata |
+          platino |
+          diamante[s]? |
+          esmeralda[s]? |
+          rub[ií] |
+          zafiro[s]? |
+          piedras?@preciosas? |
+          gemas?
+        )\b
+        |
+        # ------------------------------------------------
+        # 4) PRODUCTOS COMUNES DE JOYERÍA
+        # ------------------------------------------------
+        \b(
+          anillo[s]? |
+          argolla[s]? |
+          cadena[s]? |
+          collar(?:es)? |
+          pulsera[s]? |
+          arete[s]? |
+          topos? |
+          manillas? |
+          dijes? |
+          broches? |
+          prendedor(?:es)? |
+          gargantilla[s]?
+        )\b
+        |
+        # ------------------------------------------------
+        # 5) MARCAS Y CADENAS FRECUENTES
+        # ------------------------------------------------
+        \b(
+          cartier |
+          tiffany |
+          pandora |
+          swarovski |
+          bulgari |
+          rolex |
+          omega |
+          tag@?heuer |
+          longines |
+          tissot |
+          casio |
+          citizen |
+          seiko |
+          invicta |
+          fossil |
+          michael@?kors |
+          guess |
+          armani |
+          bauer@y@co |
+          krono@?time |
+          time@center |
+          joyeros?@\w+
+        )\b
+      )
+      # ------------------------------------------------
+      # BLOQUE NEGATIVO – EXCLUSIONES
+      # ------------------------------------------------
+      (?!.*\b(
+          bisuter[ií]a |
+          fantas[ií]a |
+          accesorios?@de@moda |
+          moda |
+          boutique |
+          ropa |
+          belleza |
+          cosmet |
+          perfume |
+          spa |
+          barber |
+          peluquer |
+          mascotas? |
+          vet |
+          veterinari |
+          pet |
+          bar |
+          restaurante |
+          cafeteria
+      )\b)
+
+  # ============================================================
+  # DOMICILIOS / DELIVERY – pedidos por apps o teléfono
+  # ============================================================
+  regex_domicilios:
+    categoria_codigo: D10600
+    categoria_nombre: Compras y consumo
+    subcategoria_codigo: D10613
+    subcategoria_nombre: Domicilios
+    regex: |
+      (?ix)
+      (
+        # ------------------------------------------------
+        # 1. Apps de domicilios (principales)
+        # ------------------------------------------------
+        \b(
+          rappi |
+          rappi@?pay |
+          rappi@?favor |
+          rappifavor |
+          uber@?eats |
+          ubereats |
+          didi@?food |
+          dlo?didi@?food |
+          didi@?food |
+          ifood |
+          pedidosya |
+          pedidos@ya |
+          domicilio@app |
+          domicilio@online |
+          dlo?didi@?food |
+          didi@?food |
+          rappirappi
+        )\b
+        |
+        # ------------------------------------------------
+        # 2. Referencias explícitas a domicilio
+        # ------------------------------------------------
+        \b(
+          domicilio[s]? |
+          a@domicilio |
+          servicio@de@domicilio[s]? |
+          pedido@a@domicilio |
+          envio@a@casa |
+          entrega@a@domicilio |
+          delivery |
+          home@?delivery
+        )\b
+        |
+        # ------------------------------------------------
+        # 3. Pagos bancarios típicos asociados a domicilios
+        # ------------------------------------------------
+        \b(
+          mer(pago|cadopago)\*@?(rappi|uber@?eats|didi@?food|ifood|pedidosya) |
+          mercado@pago\*@?(rappi|uber@?eats|didi@?food|ifood|pedidosya) |
+          mp\*@?(rappi|uber@?eats|didi@?food|ifood|pedidosya) |
+          paypal\*@?(uber@?eats|ifood)
+        )\b
+        |
+        # ------------------------------------------------
+        # 4. Restaurantes y comercios cuando dicen DOMICILIO
+        # (sin capturar el restaurante físico)
+        # ------------------------------------------------
+        \b(
+          restaurante@.*@domicilio |
+          pizza@.*@domicilio |
+          hamburguesa@.*@domicilio |
+          pollo@.*@domicilio |
+          sushi@.*@domicilio
+        )\b
+        |
+        # ------------------------------------------------
+        # 5. Mensajes típicos de pedidos telefónicos
+        # ------------------------------------------------
+        \b(
+          pedido@telefonico |
+          pedido@por@telefono |
+          linea@domicilios |
+          domicilios@telefonicos
+        )\b
+      )
+      # ------------------------------------------------
+      # BLOQUE NEGATIVO – EXCLUSIONES
+      # ------------------------------------------------
+      (?!.*\b(
+          taxi |
+          uber\b(?!@?eats) |
+          didi\b(?!@?food) |
+          indrive |
+          cabify |
+          mensajeria |
+          paqueteria |
+          servientrega |
+          dhl |
+          fedex |
+          envio@internacional |
+          transporte@de@carga |
+          encomiendas |
+          marketplace |
+          mercadolibre |
+          mercado@?pago(?!\*)
+      )\b)
+
+  regex_muebles:
+    categoria_codigo: D10600
+    categoria_nombre: Compras y consumo
+    subcategoria_codigo: D10614
+    subcategoria_nombre: Muebles
+    regex: |
+      (?ix)
+      (
+        # -----------------------
+        # BLOQUE NEGATIVO GENERAL
+        # -----------------------
+        (?!.*\b(
+            electrodom[ee]sticos?|linea@blanca|neveras?|lavadoras?|estufas?|
+            ferreter[ii]a|construcci[oo]n|materiales?@de@construcci[oo]n|
+            inmobiliaria|constructora|arrendamientos?|bienes@ra[ii]ces|
+            restaurante|comida|supermercado|market|
+            ropa|moda|zapatos?|calzado|
+            seguro|ropa|tecnolog[ii]a|viaje|
+            cuota|pago|financiamiento|inter[ee]s|saldo|abono
+        )\b)
+
+        # -------------------------------------
+        # 1) TERMINOS GENERALES DE MUEBLES
+        # -------------------------------------
+        \b(?:
+          muebles?(?:@y@(?:colchones|accesorios|objetos|decoraci[oo]n|dise[nn]o))?|
+          mobiliario|
+          amoblamiento|
+          enseres?
+        )\b
+        |
+        # -------------------------------------
+        # 2) MUEBLES POR TIPO Y ESPACIOS
+        # -------------------------------------
+        \b(?:
+          # Sala y estar
+          salas?|
+          sof[aa]s?|
+          poltronas?|
+          reclinables?|
+          # Comedor
+          comedores?|
+          mesas?(?:@(?:de@comedor|auxiliares|de@centro))?|
+          sillas?|
+          # Dormitorio
+          camas?|
+          camarotes?|
+          literas?|
+          # Almacenamiento
+          closets?|
+          roperos?|
+          armarios?|
+          c[oo]modas?|
+          gaveteros?|
+          # Trabajo y estudio
+          escritorios?|
+          bibliotecas?|
+          estanter[ii]as?|
+          muebles@de@oficina|
+          # Cocina
+          muebles@de@cocina|
+          gabinetes?|
+          alacenas?|
+          # Bano
+          muebles@de@ba[nn]o|
+          tocadores?|
+          # Exterior
+          muebles@de@jard[ii]n|
+          muebles@de@terraza|
+          # Modulares y especiales
+          modulares?|
+          empotrados?|
+          esquineros?
+        )\b
+        |
+        # -------------------------------------
+        # 3) COLCHONES Y DESCANSO
+        # -------------------------------------
+        \b(?:
+          colchones?(?:@(?:paraiso|relax|pullman|spring|happy@sleep|dormilife|fant[aa]sia|comodisimos|doral|dorflex|forli))?|
+          decolchones|
+          supercolch[oo]n(?:es)?|
+          paraiso|
+          pullman|
+          sealy|
+          serta|
+          tempur(?:pedic)?|
+          dorflex|
+          comodisimos|
+          happy@sleep|
+          dormilife|
+          fant[aa]sia|
+          spring|
+          relax|
+          doral|
+          forli|
+          # Accesorios de descanso
+          almohadas?|
+          cojines?|
+          protectores?@de@colch[oo]n|
+          sabanas?|
+          edredones?
+        )\b
+        |
+        # -------------------------------------
+        # 4) CADENAS Y TIENDAS DE MUEBLES
+        # -------------------------------------
+        \b(?:
+          # Cadenas principales
+          muebles@jamar|
+          jamar(?:@muebles)?|
+          credijamar|
+          only@muebles|
+          textimuebles|
+          plastirimuebles|
+          # Cadenas internacionales
+          ikea|
+          # Tiendas especificas
+          bys@muebles|
+          zanetti@muebles|
+          artes@y@muebles|
+          nestor@r@muebles|
+          jucana@muebles|
+          mazal@muebles|
+          todo@muebles|
+          super@muebles|
+          muebles@(?:europa|panamericana|dico|bl)|
+          muebles@(?:&@accesorios)|
+          # Patrones comerciales
+          merc(?:ado@pago)?\*?muebles(?:ymuebles)?|
+          # Especializadas en hogar/muebles
+          hogarking|
+          rimax@hogar(?:@en@vivo)?|
+          casa@hogar|
+          hogar@(?:en@vivo|city|universal)|
+          centro@hogar(?:@del@\w+)?|
+          rey@del@hogar|
+          arte@hogar|
+          punto@hogar|
+          gigante@del@hogar|
+          multihogar|
+          surtihogar|
+          camahogar|
+          hilahogar
+        )\b
+        |
+        # -------------------------------------
+        # 5) PATRONES COMERCIALES Y DISTRIBUCION
+        # -------------------------------------
+        \b(?:
+          almacen(?:es)?@(?:de@)?muebles|
+          almac[ee]n@(?:muebles?|gigante|universal)|
+          distribuidora@(?:de@)?muebles|
+          fabrica@de@muebles|
+          f[aa]brica@de@muebles|
+          outlet@(?:de@)?muebles|
+          muebles@(?:factory|express|center)|
+          casa@de@muebles|
+          tienda@de@muebles|
+          # Patrones de retail
+          ambiente@gourmet|
+          decor@gourmet|
+          hogar@gourmet|
+          espacio@gourmet,
+          cocina@gourmet
+        )\b
+        |
+        # -------------------------------------
+        # 6) MATERIALES Y ACABADOS DE MUEBLES
+        # -------------------------------------
+        \b(?:
+          madera(?:s)?|
+          carpinter[ii]a|
+          ebanister[ii]a|
+          tapizer[ii]a|
+          retapizado|
+          restauraci[oo]n@de@muebles|
+          barniz|
+          laqueado|
+          enchapado
+        )\b
+      )
+
+  regex_cuotas_manejo:
+    categoria_codigo: D10700
+    categoria_nombre: Servicios financieros
+    subcategoria_codigo: D10701
+    subcategoria_nombre: Cuotas de manejo
+    regex: |
+      (?ix)
+      (?!.*\b(
+        credito|prestamo|hipoteca|seguro|interes
+      )\b)
+      \b(
+        cuota@de@manejo |
+        cuota@manejo |
+        cargo@manejo |
+        mantenimiento@cuenta |
+        mantenimiento@tarjeta |
+        cuota@administracion@cuenta |
+        cargo@administrativo@bancario
+      )\b
+  # =============
+  regex_tarjetas_credito:
+    categoria_codigo: D10700
+    categoria_nombre: Servicios financieros
+    subcategoria_codigo: D10702
+    subcategoria_nombre: Tarjetas de credito
+    regex: |
+      (?ix)
+      (?!.*\b(
+        compra|restaurante|supermercado|gasolina|
+        ropa|tecnologia|viaje
+      )\b)
+      \b(
+        tarjeta@de@credito |
+        pago@tarjeta |
+        pago@tarjeta@credito |
+        pago@t\.?c\.? |
+        abono@tarjeta |
+        pago@minimo@tarjeta |
+        saldo@tarjeta@credito
+      )\b
+  regex_creditos_educativos:
+    categoria_codigo: D10700
+    categoria_nombre: Servicios financieros
+    subcategoria_codigo: D10703
+    subcategoria_nombre: Creditos educativos
+    regex: |
+      (?ix)
+      \b(
+        credito@educativo |
+        prestamo@educativo |
+        financiamiento@educativo |
+        icetex |
+        credito@universitario |
+        prestamo@estudiantil
+      )\b
+  regex_creditos_vehiculo:
+    categoria_codigo: D10700
+    categoria_nombre: Servicios financieros
+    subcategoria_codigo: D10704
+    subcategoria_nombre: Creditos de vehiculo
+    regex: |
+      (?ix)
+      \b(
+        credito@vehicular |
+        prestamo@vehiculo |
+        credito@automotriz |
+        financiamiento@vehiculo |
+        credito@carro |
+        credito@moto |
+        leasing@vehicular
+      )\b
+  regex_creditos:
+    categoria_codigo: D10700
+    categoria_nombre: Servicios financieros
+    subcategoria_codigo: D10705
+    subcategoria_nombre: Creditos
+    regex: |
+      (?ix)
+      (?!.*\b(
+        hipotecario|vehicular|educativo
+      )\b)
+      \b(
+        credito |
+        prestamo |
+        credito@personal |
+        prestamo@personal |
+        credito@libre@inversion |
+        financiamiento |
+        desembolso@credito
+      )\b
+  #===============================================
+  # COMISIONES BANCARIAS
+  # ============================================================
+  regex_comisiones_bancarias: 
+    categoria_codigo: D10700
+    categoria_nombre: Servicios financieros
+    subcategoria_codigo: D10706
+    subcategoria_nombre: Comisiones bancarias
+    regex: |
+      (?ix)
+      (
+        comision(?:es)? |
+        cargo@por@comision(?:es)? |
+        cuota@de@manejo |
+        manejo@cuenta |
+        comision@avance |
+        comision@cajero |
+        comision@transferencia |
+        comision@consulta |
+        comision@reexpedicion |
+        comision@otros@bancos |
+        comision@internacional |
+        comision@portal |
+        comision@call@?center |
+        comision@ath |
+        comision@pinpad |
+        cargo@administrativo |
+        costo@administrativo |
+        ajustes@?monetarios |
+        ajustesmonetarios |
+        cargo@?emision |
+        cargoemision
+      )
+      (?!.*\b(
+          iva |
+          impuesto |
+          gmf |
+          seguro |
+          exequial
+      )\b)
+  # ============================================================
+  # INTERESES / MORA / CARGOS FINANCIEROS
+  # ============================================================
+  regex_intereses_y_mora: 
+    categoria_codigo: D10700
+    categoria_nombre: Servicios financieros
+    subcategoria_codigo: D10707
+    subcategoria_nombre: Intereses de mora
+    regex: |
+      (?ix)
+      (
+        interes(?:es)? |
+        interes@de@mora |
+        mora |
+        interes@corriente |
+        interes@remuneratorio |
+        interes@moratorio |
+        cargo@financiero |
+        cargos@financieros |
+        costo@financiero |
+        ajuste@financiero |
+        recargo@financiero |
+        penalidad |
+        sancion@financiera
+      )
+      (?!.*\b(
+          comision |
+          seguro |
+          iva |
+          impuesto |
+          gmf
+      )\b)
+
+  # ============================================================
+  # SEGUROS TARJETA DE CRÉDITO
+  # ============================================================
+  regex_seguros_tc: 
+    categoria_codigo: D10700
+    categoria_nombre: Servicios financieros
+    subcategoria_codigo: D10708
+    subcategoria_nombre: Seguros TC
+    regex: |
+      (?ix)
+      (
+        tarjeta@protegida |
+        tc@protegida |
+        seguro@tarjeta |
+        seguro@tc |
+        seguro@tdc |
+        proteccion@tarjeta |
+        proteccion@tc |
+        bolso/?billetera@protegida |
+        compras?@protegidas |
+        fraude@tarjeta |
+        seguro@fraude |
+        seguro@compras |
+        seguro@avance
+      )
+      (?!.*\b(
+          exequial |
+          funerari |
+          vida |
+          viaje |
+          hogar |
+          auto |
+          soat
+      )\b)
+
+  regex_seguros:
+    categoria_codigo: D10700
+    categoria_nombre: Servicios financieros
+    subcategoria_codigo: D10709
+    subcategoria_nombre: Seguros
+    regex: |
+      (?ix)
+      (?!.*\b(
+        vehicular|auto|carro|moto|
+        salud|medico|medica|prepagada|
+        hogar|mascota
+      )\b)
+      \b(
+        seguro |
+        seguros |
+        poliza |
+        póliza |
+        pago@seguro |
+        prima@seguro |
+        cuota@seguro |
+        seguro@de@vida |
+        seguro@personal |
+        proteccion@financiera |
+        proteccion@crediticia
+      )\b
+  regex_retiros_efectivo:
+    categoria_codigo: D10700
+    categoria_nombre: Servicios financieros
+    subcategoria_codigo: D10710
+    subcategoria_nombre: Retiros de efectivo
+    regex: |
+      (?ix)
+      \b(
+        retiro@?efectivo |
+        retiro@?en@?cajero |
+        retiro@?por@?cajero |
+        retiro@?de@?cajero |
+        retiro@?con@?cajero |
+        retiro@?sin@?tarjeta |
+        retiro@?sin@?tarj(?:eta)? |
+        retiro@?sin@?t\.?c\.? |
+        retiro@?sin@?t(?:arjeta)? |
+        retiro@?con@?documento |
+        retiro@?con@?identificacion |
+        retiro@?con@?(?:cedula|c[ií]d|dni|doc) |
+        retiro(?:\w*)@\w*efectivo
+      )\b
+      (?!.*\b(
+          mercado(?:pago)?|
+          pago(?:s)?(?:\w*)@\w+|
+          transferenci[ao]n(?:\w*)@\w+|
+          pago(?:s)?(?:\w*)@\w+|
+          compra(?:s)?(?:\w*)@\w+|
+          abono(?:s)?(?:\w*)@\w+
+      )\b)
+  # ============================================================
+  # CDT – CONSTITUCIÓN / APERTURA / DÉBITO A CDT
+  # (salidas de dinero haciaS CDT)
+  # ============================================================
+  regex_cdt: 
+    categoria_codigo: D10800
+    categoria_nombre: Inversión y ahorro
+    subcategoria_codigo: D10801
+    subcategoria_nombre: CDT
+    regex: |
+      (?ix)
+      ^
+      (?!.*\b(
+          abono |
+          interes(?:es)? |
+          rendimiento |
+          rentabilidad |
+          cancelaci[oó]n |
+          redenci[oó]n |
+          desinversi[oó]n |
+          prescrip |
+          vencimiento |
+          pago@cdt |
+          retorno |
+          liquidaci[oó]n
+      )\b)
+      (
+          # ------------------------------------------------
+          # Constitución / apertura CDT
+          # ------------------------------------------------
+          constituci[oó]n@cdt |
+          apertura@cdt |
+          apertura@de@cdt |
+          inversion@cdt |
+          inversi[oó]n@en@cdt |
+          colocaci[oó]n@cdt |
+          compra@cdt |
+          adquisici[oó]n@cdt |
+          # ------------------------------------------------
+          # Débitos explícitos
+          # ------------------------------------------------
+          debito@cdt |
+          debito@por@cdt |
+          cargo@cdt |
+          cargo@por@cdt |
+          # ------------------------------------------------
+          # Transferencias a CDT
+          # ------------------------------------------------
+          transferencia@a@cdt |
+          traslado@a@cdt |
+          traslado@inversion@cdt |
+          # ------------------------------------------------
+          # CDT desmaterializado (entrada a inversión)
+          # ------------------------------------------------
+          cdt@desmaterializado(?!.*capital) |
+          constituci[oó]n@cdt@desmaterializado |
+          # ------------------------------------------------
+          # Variantes abreviadas / bancarias
+          # ------------------------------------------------
+          inv\.@?cdt |
+          inv@cdt |
+          cdt@inversion |
+          cdt@constitucion
+      )
+
+  # ============================================================
+  # AHORROS E INVERSIONES – DÉBITOS (NO CDT)
+  # Fiducia / Fondos / Carteras / Ahorro programado
+  # ============================================================
+  regex_inversiones:
+    categoria_codigo: D10800
+    categoria_nombre: Inversión y ahorro
+    subcategoria_codigo: D10802
+    subcategoria_nombre: Inversiones
+    regex: |
+      (?ix)
+      ^
+      (?!.*\b(
+          cdt |
+          certificado@de@deposito |
+          apertura@cdt |
+          aumento@de@capital@de@cdt |
+          constituci[oó]n@cdt |
+          inversion@cdt
+      )\b)
+      (
+          # ------------------------------------------------
+          # 1. Inversiones fiduciarias / fondos
+          # ------------------------------------------------
+          cargo@transferencia@inversion(?:/|y)?desinversion.*fiducia |
+          transferencia@a@fiducia |
+          inversion@fiducia |
+          inversi[oó]n@en@fiducia |
+          fiducia(?:ria)?@inversion |
+          # ------------------------------------------------
+          # 2. Carteras colectivas / encargos fiduciarios
+          # ------------------------------------------------
+          db@inversion@cartera@colectiva |
+          inversion@cartera@colectiva |
+          encargo@fiduciario |
+          inversion@encargo@fiduciario |
+          # ------------------------------------------------
+          # 3. Ahorro programado (débitos)
+          # ------------------------------------------------
+          cargo@automatico@ahorro@programado |
+          debito@automatico@ahorro@programado |
+          ahorro@programado@debito |
+          # ------------------------------------------------
+          # 4. Débitos automáticos hacia fiduciarias
+          # ------------------------------------------------
+          cargo@por@recaudo@con@debito@automatico.*fiduciaria |
+          debito@automatico.*fiducia |
+          # ------------------------------------------------
+          # 5. Genéricos de inversión (no CDT)
+          # ------------------------------------------------
+          db@inversion\b |
+          debito@inversion\b |
+          cargo@inversion\b
+      )
+
+  regex_bolsillos:
+    categoria_codigo: D10800
+    categoria_nombre: Inversion y ahorro
+    subcategoria_codigo: D10803
+    subcategoria_nombre: Bolsillos
+    regex: |
+      (?ix)
+      ^
+      (?!.*\b(
+          cdt |
+          fiducia |
+          inversion |
+          cartera@colectiva |
+          seguro |
+          credito |
+          prestamo
+      )\b)
+      (
+          # Bolsillos
+          bolsillo(?:s)? |
+          pocket(?:s)? |
+          ahorro@en@bolsillo |
+          traslado@a@bolsillo |
+          traslado@bolsillo |
+          movimiento@bolsillo |
+
+          # Subcuentas
+          subcuenta(?:s)? |
+          cuenta@auxiliar |
+          cuenta@virtual |
+          cuenta@interna |
+
+          # Metas
+          meta(?:s)?@de@ahorro |
+          ahorro@por@metas? |
+          objetivo@de@ahorro |
+
+          # Transferencias
+          traslado@interno |
+          transferencia |
+
+          # NUEVOS PATRONES BANCARIOS
+          breb(?:cashout|cashin|bonus)? |
+          retiro(?:atm|cb)?otp |
+          cashin(?:cb)? |
+          retirocbotp |
+          recarga@?de@?tu@?llave |
+          recargadetullave |
+          intrasolucion |
+          tma
+      )
+
+  regex_cooperativas_sector_solidario: 
+    categoria_codigo: D10800
+    categoria_nombre: Inversión y ahorro
+    subcategoria_codigo: D10804
+    subcategoria_nombre: Aportes a cooperativas
+    regex: |
+      (?ix)
+      ^
+      (?!.*\b(
+          seguro |
+          impuestos? |
+          gmf |
+          iva |
+          comision(?:es)?@bancarias?
+      )\b)
+      (
+          # ------------------------------------------------
+          # 1. Palabras núcleo del sector solidario
+          # ------------------------------------------------
+          cooperativa(?:s)? |
+          coop\b |
+          coope(?:rativa)? |
+          fondo@de@empleados |
+          fondo@solidario |
+          entidad@solidaria |
+          sector@solidario |
+          economia@solidaria |
+          mutual(?:es)? |
+          asociaci[oó]n@solidaria |
+          caja@de@ahorro@solidaria |
+          # ------------------------------------------------
+          # 2. Cooperativas de ahorro y crédito (genérico)
+          # ------------------------------------------------
+          cooperativa@de@ahorro@y@cr[eé]dito |
+          coop@ahorro@y@cr[eé]dito |
+          cac\b |                        # abreviatura común
+          cafam@cooperativa |
+          # ------------------------------------------------
+          # 3. Movimientos típicos
+          # ------------------------------------------------
+          aporte(?:s)? |
+          aporte@social |
+          cuota@de@ahorro |
+          ahorro@cooperativo |
+          abono@ahorro |
+          pago@cooperativa |
+          traslado@cooperativa |
+          transferencia@cooperativa |
+          debito@cooperativa |
+          credito@cooperativa |
+          descuento@por@nomina |
+          # ------------------------------------------------
+          # 4. Créditos en cooperativas
+          # ------------------------------------------------
+          credito@cooperativo |
+          prestamo@cooperativa |
+          obligaci[oó]n@cooperativa |
+          cuota@credito@cooperativa |
+          libranza@cooperativa |
+          # ------------------------------------------------
+          # 5. Ahorros e inversiones cooperativas
+          # ------------------------------------------------
+          ahorro@permanente |
+          ahorro@voluntario |
+          ahorro@programado |
+          certificado@de@aporte |
+          aporte@permanente |
+          # ------------------------------------------------
+          # 6. Etiquetas bancarias comunes
+          # ------------------------------------------------
+          db@coop |
+          cr@coop |
+          pago@coop |
+          abono@coop |
+          recaudo@coop |
+          # ------------------------------------------------
+          # 7. Nombres frecuentes (expandible)
+          # ------------------------------------------------
+          (
+            comultrasan |
+            cotrafa |
+            confiar |
+            coomeva |
+            juriscoop |
+            coopcentral |
+            cooperamos |
+            cooperativa@financiera |
+            cofinal |
+            cofrem |
+            cofremed |
+            fincomercio@coop |
+            cooperativa@multiactiva
+          )
+      )
+
+
+  # ============================================================
+  # DONACIONES
+  # ============================================================
+  regex_donaciones:
+    categoria_codigo: D11100
+    categoria_nombre: Otros
+    subcategoria_codigo: D11004
+    subcategoria_nombre: Donaciones
+    regex: |
+      (?ix)
+      (
+          \bunicef\b |
+          fondo@unido@naciones@unidas
+      )
+      (?!.*
+          (
+              # Exclusiones para evitar conflictos con otros sectores
+              cooperativa |
+              iglesia |
+              templo |
+              parroquia |
+              colegio |
+              banco@de@alimentos
+          )
+      )
+
+
+  # ============================================================
+  # IMPUESTOS NACIONALES – DIAN / Renta / IVA / Retenciones / GMF
+  # ============================================================
+  regex_impuestos_nacionales:
+    categoria_codigo: D10900
+    categoria_nombre: Impuestos y Aportes
+    subcategoria_codigo: D10901
+    subcategoria_nombre: Impuestos Nacionales
+    regex: |
+      (?ix)
+      (
+          # GMF - Gravamen a los Movimientos Financieros
+          \bgmf\b |
+          cuatro@?[x×]@?mil |
+          4@?por@?mil |
+          gravamen@movimientos@financieros |
+          
+          # Timbre chequera (caso especial)
+          TIMBRE@CHEQUERA |
+          
+          # Otros impuestos nacionales con prefijos
+          (
+              compra(@virtual)?@en@establecimiento |
+              transferencia@enviada@con@llave/qr@a |
+              pago@pse(@en@establecimiento)? |
+              pago@de@servicios |
+              pago@de@impuestos |
+              compra@en@internet |
+              cargo@ach@por@recaudo@con@d[ée]bito@automatico
+          )@
+          (
+              dian |
+              declaraci[oó]n@de@renta |
+              renta |
+              iva |
+              retenciones? |
+              rte[ _-]?(fuente|iva)? |
+              patrimonio |
+              anticipo |
+              impuesto@nacional |
+              impuesto@al@valor |
+              impuesto@de@timbre
+          )
+      )
+      (?!.*\b(
+          import | insumos | esika | fantasias | comercializadora |
+          google | gsuite | plaza
+      )\b)
+    
+  # ============================================================
+  # SEGURIDAD SOCIAL – Salud / Pensión / ARL / UGPP
+  # ============================================================
+  regex_seguridad_social:
+    categoria_codigo: D10900
+    categoria_nombre: Impuestos
+    subcategoria_codigo: D10902
+    subcategoria_nombre: Seguridad Social
+    regex: |
+      (?ix)
+      ^(
+          (
+              pago@pse |
+              transferencia |
+              cargo@ach@por@recaudo |
+              pago@de@servicios
+          )@
+          \b(
+              seguridad@social |
+              aportes?@seguridad@social |
+              salud |
+              pensi[oó]n |
+              arl |
+              riesgos@laborales |
+              ugpp |
+              parafiscales |
+              planilla@pil[aá] |
+              eps |
+              fondo@de@pensiones |
+              caja@de@compensaci[oó]n |
+              sena |
+              icbf
+          )\b
+      )
+      (?!.*\b(
+          seguro | poliza | aseguradora
+      )\b)
+    
+  # ============================================================
+  # IMPUESTOS TERRITORIALES – Municipales / Departamentales
+  # ============================================================
+  regex_impuestos_territoriales:
+    categoria_codigo: D10900
+    categoria_nombre: Impuestos
+    subcategoria_codigo: D10903
+    subcategoria_nombre: Impuestos Territoriales
+    regex: |
+      (?ix)
+      ^(
+          (
+              compra(@virtual)?@en@establecimiento |
+              pago@pse |
+            transferencia |
+            cargo@ach@por@recaudo |
+            pago@de@servicios
+        )@
+        \b(
+            impuesto@predial |
+            impuesto@vehicular |
+            imp@vehicular@valle |
+            impusto@veh |
+            ica |
+            reteica |
+            industria@y@comercio |
+            transito |
+            secretaria@de@hacienda |
+            tesorer[ií]a@(municipal|departamental|distrital)? |
+            municipio@de@[a-záéíóúñl]+ |
+            municipio@[a-záéíóúñl]+@co |
+            municipio@de@medellin |
+            municipio@medellin |
+            gobernaci[oó]n |
+            departamento@de@[a-záéíóúñl]+ |
+            departamento@[a-záéíóúñl]+@co |
+            camara@de@comercio |
+            notaria(s)?
+        )\b
+      )
+      (?!.*\b(
+          nissan | google | plaza | esika | comercializadora
+      )\b)
+
+  # ============================================================
+  # VIAJES – HOSPEDAJE
+  # ============================================================
+  regex_hospedaje:
+    categoria_codigo: D11000
+    categoria_nombre: Turismo
+    subcategoria_codigo: D11001
+    subcategoria_nombre: Hospedaje
+    regex: |
+      (?ix)
+      (?!.*\b(
+          seguro | hospital | ferreter[ií]a | gasolina | eds |
+          moda | tienda | estadero
+      )\b)
+      \b(
+          hotel(?:es|ero(?:s)?|era(?:s)?)? |
+          hotels? |
+          hostel(?:es)? |
+          hostal(?:es)? |
+          hoster[ií]a |
+          hospeder[ií]a |
+          aparta@?hotel |
+          aparta@?suite |
+          apartahotel |
+          suites? |
+          amoblados? |
+          finca@?hotel |
+          finca@(hotel|tur\w*) |
+          eco@?hotel(?:es)? |
+          complejo@(eco)?tur\w* |
+          grupo@hotelero |
+          compañía?@hotelera |
+          servicios?@hot(?:el|eles)? |
+          avioteles |
+          \w+hoteles? |
+          hyatt |
+          hampton@inn |
+          double@?tree |
+          estelar |
+          ghl\b |
+          bh@\w+ |
+          city@group@hotels? |
+          flamingo@hotels? |
+          viajero@hotels? |
+          black@tower@premium@ho\w* |
+          emhocol |
+          airbnb@?\* |
+          booking\.com |
+          hoteles\.com |
+          agoda\.com
+      )\b
+
+  # ============================================================
+  # VIAJES – PASAJES / TRANSPORTE AÉREO
+  # ============================================================
+  regex_pasajes:
+    categoria_codigo: D11000
+    categoria_nombre: Turismo
+    subcategoria_codigo: D11002
+    subcategoria_nombre: Pasajes
+    regex: |
+      (?ix)
+      (?!.*\b(
+          hotel | hospedaje | seguro | estadero | tienda
+      )\b)
+      \b(
+          # Aerolíneas
+          avianca |
+          avianca@bogota |
+          latam@airlines |
+          copa(@(airlines|internacional))? |
+          american@air@?lines |
+          united@airlines |
+          delta |
+          air@canada |
+          aerom[eé]xico |
+          aerovias@de@m[eé]xico |
+          aerorep[úu]blica |
+          aerorepublica |
+          wingoa |
+          aerol[ií]neas@argentinas |
+          turkish@airlines |
+          lufthansa |
+          klm |
+          air@france |
+          emirates |
+          qatar@airways |
+          swiss@international |
+          norwegian@air |
+          spirit@airlines |
+          viva@air |
+          sky@airline |
+          jetsmart(?:co)? |
+          evelop@airlines |
+          # Términos de pasaje
+          pasaje(s)? |
+          boarding@pass |
+          pase@de@embarque |
+          aeropuerto |
+          airport |
+          millas@(latampass|lifemiles) |
+          lifemiles
+      )\b
+
+
+  # ============================================================
+  # VIAJES – ACTIVIDADES TURÍSTICAS
+  # ============================================================
+  regex_actividades_turisticas:
+    categoria_codigo: D11000
+    categoria_nombre: Turismo
+    subcategoria_codigo: D11003
+    subcategoria_nombre: Actividades turísticas
+    regex: |
+      (?ix)
+      (?!.*\b(
+          hotel | hospedaje | aerolinea | aeropuerto | pasaje |
+          gasolina | eds | tienda
+      )\b)
+      \b(
+          tour(s)? |
+          turismo |
+          tur[ií]stic[oa]s? |
+          travel |
+          viajes |
+          agencia@de@viajes |
+          agenc[ií]a?@?(de@)?viajes? |
+          viajes@y@tur\w* |
+          expreso@viajes? |
+          viajes@éxito |
+          aviatur |
+          gema@tours |
+          ecotours |
+          fantours |
+          civitatis |
+          pricetravel |
+          despegar |
+          atrapalo |
+          expedia |
+          trivago |
+          kayak |
+          orbitz |
+          tripadvisor |
+          colombia@travel@system |
+          carlson@wagonlit |
+          \w+@tours |
+          tours@\w+ |
+          centro@vacacional |
+          club@vacacional |
+          parque@vacacional |
+          sede@vacacional |
+          casas?@vacacionales? |
+          vacation@?(club|travel|pkg|villas)? |
+          unlimited@vacation@club |
+          el@cid@vacations? |
+          termales |
+          ecotermales
+      )\b
+
+
+  # ============================================================
+  # REGEX ESPECÍFICOS PARA CONCEPTO "credito" (INGRESOS)
+  # ============================================================
+  regex_ingresos_laborales_credito:
+    categoria_codigo: C20100
+    categoria_nombre: Entradas de dinero
+    subcategoria_codigo: C20101
+    subcategoria_nombre: Ingresos laborales
+    regex: |
+      (?ix)
+      (?!.*\b(compra|debito|pago)\b)
+      \b(abono|consignacion|transferencia@?recibida)\b
+      .*
+      (nomina|salario|sueldo|payroll)
+
+  regex_ingresos_pension_credito:
+    categoria_codigo: C20100
+    categoria_nombre: Entradas de dinero
+    subcategoria_codigo: C20102
+    subcategoria_nombre: Ingresos por pension
+    regex: |
+      (?ix)
+      (?!.*\b(compra|debito|pago)\b)
+      \b(abono|consignacion|transferencia@?recibida)\b
+      .*
+      (pension|colpensiones|fondo@?pension)
+
+  regex_subsidios_estado_credito: 
+    categoria_codigo: C20100
+    categoria_nombre: Entradas de dinero
+    subcategoria_codigo: C20103
+    subcategoria_nombre: Ingresos por subsidios del Estado
+    regex: |
+      (?ix)
+      (?!.*\b(compra|debito|pago)\b)
+      \b(abono|transferencia|consignacion)\b
+      .*
+      (prosperidad@?social|
+      ingreso@?solidario|
+      renta@?ciudadana|
+      jovenes@?en@?accion|
+      devolucion@?iva)
+
+  regex_ingresos_independientes_credito:
+    categoria_codigo: C20100
+    categoria_nombre: Entradas de dinero
+    subcategoria_codigo: C20104
+    subcategoria_nombre: Actividades independientes
+    regex: |
+      (?ix)
+      (?!.*\b(compra|debito|pago)\b)
+      \b(abono|consignacion|transferencia)\b
+      .*
+      (honorarios|servicios@?profesionales|prestacion@?servicios|
+      didi@?payin |
+      rappi@?rappi |
+      dlo@?didi)
+
+  regex_ingresos_arriendos_credito:
+    categoria_codigo: C20100 
+    categoria_nombre: Entradas de dinero
+    subcategoria_codigo: C20105
+    subcategoria_nombre: Ingresos por arriendos o extraordinarios
+    regex: |
+      (?ix)
+      (?!.*\b(compra|debito|pago)\b)
+      \b(abono|transferencia|consignacion)\b
+      .*
+      (arriendo|alquiler|canon@?arrendamiento)
+
+  regex_transferencias_recibidas_credito:
+    categoria_codigo: C20100
+    categoria_nombre: Entradas de dinero
+    subcategoria_codigo: C20106
+    subcategoria_nombre: Transferencias recibidas
+    regex: |
+      (?ix)
+      (?!.*\b(compra|debito|pago)\b)
+      (transferencia@?recibida|
+      giro@?recibido|
+      transfiya|
+      tma|
+      intrasolucion|
+      abono@?cuenta|
+      pserecargas |
+      recarga@?de@?tu@?llave|
+      breb(?:cashin|cashout|bonus) |
+      cashin@?cb |)
+
+  regex_rendimientos_financieros_credito:
+    categoria_codigo: C20100
+    categoria_nombre: Entradas de dinero
+    subcategoria_codigo: C20107
+    subcategoria_nombre: Rendimientos financieros
+    regex: |
+      (?ix)
+      (?!.*\b(compra|debito|pago)\b)
+      (interes(?:es)?|
+      rendimiento|
+      rentabilidad|
+      abono@?interes)
+    
+  regex_depositos_consignaciones:
+    categoria_codigo: C20100
+    categoria_nombre: Entradas de dinero
+    subcategoria_codigo: C20108
+    subcategoria_nombre: Depósitos y consignaciones
+    regex: |
+      (?ix)
+      (?!.*\b(
+        transferencia|transfiya|nomina|nómina|devolucion|devolución|
+        reembolso|interes|interés|rendimiento|credito|crédito
+      )\b)
+      \b(
+        deposito(?:s)? |
+        dep[oó]sito(?:s)? |
+        consignaci[oó]n(?:es)? |
+        consignado |
+        consignar |
+        abono@por@consignaci[oó]n |
+        deposito@en@efectivo |
+        dep[oó]sito@en@efectivo |
+        consignaci[oó]n@en@efectivo |
+        deposito@en@oficina |
+        dep[oó]sito@en@oficina |
+        consignaci[oó]n@en@oficina |
+        deposito@por@cajero |
+        dep[oó]sito@por@cajero |
+        deposito@en@cajero |
+        dep[oó]sito@en@cajero |
+        deposito@en@corresponsal |
+        dep[oó]sito@en@corresponsal |
+        consignaci[oó]n@en@corresponsal |
+        abono@efectivo
+      )\b
+
+  regex_otros_credito: 
+    categoria_codigo: C20200
+    categoria_nombre: Otros
+    subcategoria_codigo: C20201
+    subcategoria_nombre: Sin categorizar
+    regex: |
+      (?ix)
+      retiro@?atm@?otp |
+      cargo@?emision |
+      ajustes@?monetarios |
+      compradepaquetes |
+      tangome |
+      cambridge
+
+  regex_otros:
+    categoria_codigo: D11100
+    categoria_nombre: Otros
+    subcategoria_codigo: D11004
+    subcategoria_nombre: Sin categorizar
+    regex: |
+      (?ix)
+      ajustes@?monetarios |
+      cargo@?emision
